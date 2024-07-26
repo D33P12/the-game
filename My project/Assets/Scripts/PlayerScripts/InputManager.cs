@@ -7,9 +7,11 @@ using UnityEngine.InputSystem;
 public class InputManager : MonoBehaviour
 {
     public event Action<Vector2> onMove;
+    public event Action<Vector2> onLook;
 
     private Inputs inputs;
     private Vector2 moveInput;
+    private Vector2 lookInput;
 
     private void OnEnable()
     {
@@ -25,7 +27,10 @@ public class InputManager : MonoBehaviour
     private void SetupInput()
     {
         inputs = new Inputs();
+
+       
         inputs.PlayerMovement.Move.performed += OnMove;
+        inputs.PlayerMovement.Look.performed += OnLook;
     }
 
     private void EnableInput()
@@ -44,39 +49,25 @@ public class InputManager : MonoBehaviour
         onMove?.Invoke(moveInput);
     }
 
+    private void OnLook(InputAction.CallbackContext context)
+    {
+        lookInput = context.ReadValue<Vector2>();
+        onLook?.Invoke(lookInput);
+    }
 
+    private void Update()
+    {
+        
+        if (onMove != null)
+        {
+            onMove(moveInput);
+        }
 
+        if (onLook != null)
+        {
+            onLook(lookInput);
+        }
 
-
-
-    // playerInput.UseItem.RMB.performed += OnUseRMB;
-
-    // playerInput.UseItem.LMB.performed += OnUseLMB;
-
-
-
-
-    // playerInput.Enable();
-
-    /*  private void OnUseRMB(InputAction.CallbackContext context)
-      {
-
-          float rightButtonValue = context.ReadValue<float>();
-          if (rightButtonValue > 0.5f)
-          {
-              onUseRMB?.Invoke(true);
-          }
-
-
-      }
-      private void OnUseLMB(InputAction.CallbackContext context)
-      {
-          float leftButtonValue = context.ReadValue<float>();
-          if (leftButtonValue > 0.5f)
-          {
-              onUseLMB?.Invoke(true);
-          }
-
-      }*/
+    }
 
 }

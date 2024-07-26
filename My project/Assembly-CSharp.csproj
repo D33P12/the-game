@@ -62,7 +62,9 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\PlayerScripts\Inputs.cs" />
     <Compile Include="Assets\Scripts\PlayerScripts\InputManager.cs" />
+    <Compile Include="Assets\Scripts\ItemsScripts\FlameScript.cs" />
     <Compile Include="Assets\Scripts\EnemyScript\EnemyAi.cs" />
+    <Compile Include="Assets\Scripts\ItemsScripts\AttackScript.cs" />
     <Compile Include="Assets\Scripts\PlayerScripts\PlayerController.cs" />
   </ItemGroup>
   <ItemGroup>
