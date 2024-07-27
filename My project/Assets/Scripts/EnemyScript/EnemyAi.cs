@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
@@ -15,15 +14,14 @@ public class EnemyAi : MonoBehaviour
 
     [SerializeField]
     GameObject playerObject;
-    #region chasing info
+   
 
     [SerializeField]
     float playerDistance = 10f;
     float destinationDistance = 2f;
     Vector3 chasePosition;
 
-    #endregion
-    #region Patrol Points Variables
+   
     [SerializeField]
     List<Transform> patrolPoints = new List<Transform>();
 
@@ -31,7 +29,7 @@ public class EnemyAi : MonoBehaviour
     float patrolRadius = 3f;
 
     int currentPatrolPoint = 0;
-    #endregion
+   
 
     AIState state;
     NavMeshAgent agent;
