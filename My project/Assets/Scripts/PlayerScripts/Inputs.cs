@@ -37,18 +37,18 @@ public partial class @Inputs: IInputActionCollection2, IDisposable
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""Attack"",
-                    ""type"": ""Button"",
-                    ""id"": ""52d45863-ec65-4876-b20e-4efae77dc88b"",
-                    ""expectedControlType"": ""Button"",
+                    ""name"": ""Look"",
+                    ""type"": ""PassThrough"",
+                    ""id"": ""9f0e88d5-757f-4a34-9763-84f9db7f50c9"",
+                    ""expectedControlType"": ""Vector2"",
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""Look"",
+                    ""name"": ""Zoom"",
                     ""type"": ""PassThrough"",
-                    ""id"": ""9f0e88d5-757f-4a34-9763-84f9db7f50c9"",
+                    ""id"": ""7c6c47cd-b0de-4b1e-94b0-bdc7f07d051b"",
                     ""expectedControlType"": ""Vector2"",
                     ""processors"": """",
                     ""interactions"": """",
@@ -112,17 +112,6 @@ public partial class @Inputs: IInputActionCollection2, IDisposable
                     ""isPartOfComposite"": true
                 },
                 {
-                    ""name"": """",
-                    ""id"": ""72f169a1-eb25-448c-83e9-a30a960fa139"",
-                    ""path"": ""<Mouse>/leftButton"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Attack"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
                     ""name"": ""2D Vector"",
                     ""id"": ""29fbe62b-fb08-47a4-b636-fd3a3185251a"",
                     ""path"": ""2DVector"",
@@ -132,28 +121,6 @@ public partial class @Inputs: IInputActionCollection2, IDisposable
                     ""action"": ""Look"",
                     ""isComposite"": true,
                     ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": ""up"",
-                    ""id"": ""03fe8e6d-d406-4903-bdcf-0965d6075f8c"",
-                    ""path"": ""<Keyboard>/upArrow"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Look"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""down"",
-                    ""id"": ""d5435b3f-8843-4bd9-b724-65e279a9e886"",
-                    ""path"": ""<Keyboard>/downArrow"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Look"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
                 },
                 {
                     ""name"": ""left"",
@@ -176,11 +143,44 @@ public partial class @Inputs: IInputActionCollection2, IDisposable
                     ""action"": ""Look"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""2D Vector"",
+                    ""id"": ""e62872d0-69f2-48bc-b966-af4a65b1e95c"",
+                    ""path"": ""2DVector"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Zoom"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""left"",
+                    ""id"": ""ec6b7a39-0b4e-4ffc-8f4c-6dd6ceb12bdd"",
+                    ""path"": ""<Keyboard>/upArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Zoom"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""right"",
+                    ""id"": ""74585229-385a-4505-a2a8-f449ea76eb04"",
+                    ""path"": ""<Keyboard>/downArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Zoom"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
                 }
             ]
         },
         {
-            ""name"": ""Interact"",
+            ""name"": ""PlayerInteract"",
             ""id"": ""77d34847-5e0e-4c8d-a359-53b1e150b645"",
             ""actions"": [
                 {
@@ -196,6 +196,15 @@ public partial class @Inputs: IInputActionCollection2, IDisposable
                     ""name"": ""OptionMenu"",
                     ""type"": ""Button"",
                     ""id"": ""3bb05270-708d-440f-8e6b-afc44fb1a587"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Attack"",
+                    ""type"": ""Button"",
+                    ""id"": ""c00a775d-db60-4f1d-b75c-cd3ca605b3ee"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """",
@@ -224,6 +233,17 @@ public partial class @Inputs: IInputActionCollection2, IDisposable
                     ""action"": ""OptionMenu"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""f094e5bc-1101-486c-a40a-f32e0f07a688"",
+                    ""path"": ""<Keyboard>/shift"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Attack"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -233,12 +253,13 @@ public partial class @Inputs: IInputActionCollection2, IDisposable
         // PlayerMovement
         m_PlayerMovement = asset.FindActionMap("PlayerMovement", throwIfNotFound: true);
         m_PlayerMovement_Move = m_PlayerMovement.FindAction("Move", throwIfNotFound: true);
-        m_PlayerMovement_Attack = m_PlayerMovement.FindAction("Attack", throwIfNotFound: true);
         m_PlayerMovement_Look = m_PlayerMovement.FindAction("Look", throwIfNotFound: true);
-        // Interact
-        m_Interact = asset.FindActionMap("Interact", throwIfNotFound: true);
-        m_Interact_PickupDrop = m_Interact.FindAction("Pickup/Drop", throwIfNotFound: true);
-        m_Interact_OptionMenu = m_Interact.FindAction("OptionMenu", throwIfNotFound: true);
+        m_PlayerMovement_Zoom = m_PlayerMovement.FindAction("Zoom", throwIfNotFound: true);
+        // PlayerInteract
+        m_PlayerInteract = asset.FindActionMap("PlayerInteract", throwIfNotFound: true);
+        m_PlayerInteract_PickupDrop = m_PlayerInteract.FindAction("Pickup/Drop", throwIfNotFound: true);
+        m_PlayerInteract_OptionMenu = m_PlayerInteract.FindAction("OptionMenu", throwIfNotFound: true);
+        m_PlayerInteract_Attack = m_PlayerInteract.FindAction("Attack", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -301,15 +322,15 @@ public partial class @Inputs: IInputActionCollection2, IDisposable
     private readonly InputActionMap m_PlayerMovement;
     private List<IPlayerMovementActions> m_PlayerMovementActionsCallbackInterfaces = new List<IPlayerMovementActions>();
     private readonly InputAction m_PlayerMovement_Move;
-    private readonly InputAction m_PlayerMovement_Attack;
     private readonly InputAction m_PlayerMovement_Look;
+    private readonly InputAction m_PlayerMovement_Zoom;
     public struct PlayerMovementActions
     {
         private @Inputs m_Wrapper;
         public PlayerMovementActions(@Inputs wrapper) { m_Wrapper = wrapper; }
         public InputAction @Move => m_Wrapper.m_PlayerMovement_Move;
-        public InputAction @Attack => m_Wrapper.m_PlayerMovement_Attack;
         public InputAction @Look => m_Wrapper.m_PlayerMovement_Look;
+        public InputAction @Zoom => m_Wrapper.m_PlayerMovement_Zoom;
         public InputActionMap Get() { return m_Wrapper.m_PlayerMovement; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -322,12 +343,12 @@ public partial class @Inputs: IInputActionCollection2, IDisposable
             @Move.started += instance.OnMove;
             @Move.performed += instance.OnMove;
             @Move.canceled += instance.OnMove;
-            @Attack.started += instance.OnAttack;
-            @Attack.performed += instance.OnAttack;
-            @Attack.canceled += instance.OnAttack;
             @Look.started += instance.OnLook;
             @Look.performed += instance.OnLook;
             @Look.canceled += instance.OnLook;
+            @Zoom.started += instance.OnZoom;
+            @Zoom.performed += instance.OnZoom;
+            @Zoom.canceled += instance.OnZoom;
         }
 
         private void UnregisterCallbacks(IPlayerMovementActions instance)
@@ -335,12 +356,12 @@ public partial class @Inputs: IInputActionCollection2, IDisposable
             @Move.started -= instance.OnMove;
             @Move.performed -= instance.OnMove;
             @Move.canceled -= instance.OnMove;
-            @Attack.started -= instance.OnAttack;
-            @Attack.performed -= instance.OnAttack;
-            @Attack.canceled -= instance.OnAttack;
             @Look.started -= instance.OnLook;
             @Look.performed -= instance.OnLook;
             @Look.canceled -= instance.OnLook;
+            @Zoom.started -= instance.OnZoom;
+            @Zoom.performed -= instance.OnZoom;
+            @Zoom.canceled -= instance.OnZoom;
         }
 
         public void RemoveCallbacks(IPlayerMovementActions instance)
@@ -359,35 +380,40 @@ public partial class @Inputs: IInputActionCollection2, IDisposable
     }
     public PlayerMovementActions @PlayerMovement => new PlayerMovementActions(this);
 
-    // Interact
-    private readonly InputActionMap m_Interact;
-    private List<IInteractActions> m_InteractActionsCallbackInterfaces = new List<IInteractActions>();
-    private readonly InputAction m_Interact_PickupDrop;
-    private readonly InputAction m_Interact_OptionMenu;
-    public struct InteractActions
+    // PlayerInteract
+    private readonly InputActionMap m_PlayerInteract;
+    private List<IPlayerInteractActions> m_PlayerInteractActionsCallbackInterfaces = new List<IPlayerInteractActions>();
+    private readonly InputAction m_PlayerInteract_PickupDrop;
+    private readonly InputAction m_PlayerInteract_OptionMenu;
+    private readonly InputAction m_PlayerInteract_Attack;
+    public struct PlayerInteractActions
     {
         private @Inputs m_Wrapper;
-        public InteractActions(@Inputs wrapper) { m_Wrapper = wrapper; }
-        public InputAction @PickupDrop => m_Wrapper.m_Interact_PickupDrop;
-        public InputAction @OptionMenu => m_Wrapper.m_Interact_OptionMenu;
-        public InputActionMap Get() { return m_Wrapper.m_Interact; }
+        public PlayerInteractActions(@Inputs wrapper) { m_Wrapper = wrapper; }
+        public InputAction @PickupDrop => m_Wrapper.m_PlayerInteract_PickupDrop;
+        public InputAction @OptionMenu => m_Wrapper.m_PlayerInteract_OptionMenu;
+        public InputAction @Attack => m_Wrapper.m_PlayerInteract_Attack;
+        public InputActionMap Get() { return m_Wrapper.m_PlayerInteract; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
         public bool enabled => Get().enabled;
-        public static implicit operator InputActionMap(InteractActions set) { return set.Get(); }
-        public void AddCallbacks(IInteractActions instance)
+        public static implicit operator InputActionMap(PlayerInteractActions set) { return set.Get(); }
+        public void AddCallbacks(IPlayerInteractActions instance)
         {
-            if (instance == null || m_Wrapper.m_InteractActionsCallbackInterfaces.Contains(instance)) return;
-            m_Wrapper.m_InteractActionsCallbackInterfaces.Add(instance);
+            if (instance == null || m_Wrapper.m_PlayerInteractActionsCallbackInterfaces.Contains(instance)) return;
+            m_Wrapper.m_PlayerInteractActionsCallbackInterfaces.Add(instance);
             @PickupDrop.started += instance.OnPickupDrop;
             @PickupDrop.performed += instance.OnPickupDrop;
             @PickupDrop.canceled += instance.OnPickupDrop;
             @OptionMenu.started += instance.OnOptionMenu;
             @OptionMenu.performed += instance.OnOptionMenu;
             @OptionMenu.canceled += instance.OnOptionMenu;
+            @Attack.started += instance.OnAttack;
+            @Attack.performed += instance.OnAttack;
+            @Attack.canceled += instance.OnAttack;
         }
 
-        private void UnregisterCallbacks(IInteractActions instance)
+        private void UnregisterCallbacks(IPlayerInteractActions instance)
         {
             @PickupDrop.started -= instance.OnPickupDrop;
             @PickupDrop.performed -= instance.OnPickupDrop;
@@ -395,32 +421,36 @@ public partial class @Inputs: IInputActionCollection2, IDisposable
             @OptionMenu.started -= instance.OnOptionMenu;
             @OptionMenu.performed -= instance.OnOptionMenu;
             @OptionMenu.canceled -= instance.OnOptionMenu;
+            @Attack.started -= instance.OnAttack;
+            @Attack.performed -= instance.OnAttack;
+            @Attack.canceled -= instance.OnAttack;
         }
 
-        public void RemoveCallbacks(IInteractActions instance)
+        public void RemoveCallbacks(IPlayerInteractActions instance)
         {
-            if (m_Wrapper.m_InteractActionsCallbackInterfaces.Remove(instance))
+            if (m_Wrapper.m_PlayerInteractActionsCallbackInterfaces.Remove(instance))
                 UnregisterCallbacks(instance);
         }
 
-        public void SetCallbacks(IInteractActions instance)
+        public void SetCallbacks(IPlayerInteractActions instance)
         {
-            foreach (var item in m_Wrapper.m_InteractActionsCallbackInterfaces)
+            foreach (var item in m_Wrapper.m_PlayerInteractActionsCallbackInterfaces)
                 UnregisterCallbacks(item);
-            m_Wrapper.m_InteractActionsCallbackInterfaces.Clear();
+            m_Wrapper.m_PlayerInteractActionsCallbackInterfaces.Clear();
             AddCallbacks(instance);
         }
     }
-    public InteractActions @Interact => new InteractActions(this);
+    public PlayerInteractActions @PlayerInteract => new PlayerInteractActions(this);
     public interface IPlayerMovementActions
     {
         void OnMove(InputAction.CallbackContext context);
-        void OnAttack(InputAction.CallbackContext context);
         void OnLook(InputAction.CallbackContext context);
+        void OnZoom(InputAction.CallbackContext context);
     }
-    public interface IInteractActions
+    public interface IPlayerInteractActions
     {
         void OnPickupDrop(InputAction.CallbackContext context);
         void OnOptionMenu(InputAction.CallbackContext context);
+        void OnAttack(InputAction.CallbackContext context);
     }
 }

@@ -15,18 +15,18 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Attack",
-                    "type": "Button",
-                    "id": "52d45863-ec65-4876-b20e-4efae77dc88b",
-                    "expectedControlType": "Button",
+                    "name": "Look",
+                    "type": "PassThrough",
+                    "id": "9f0e88d5-757f-4a34-9763-84f9db7f50c9",
+                    "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Look",
+                    "name": "Zoom",
                     "type": "PassThrough",
-                    "id": "9f0e88d5-757f-4a34-9763-84f9db7f50c9",
+                    "id": "7c6c47cd-b0de-4b1e-94b0-bdc7f07d051b",
                     "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": "",
@@ -90,17 +90,6 @@
                     "isPartOfComposite": true
                 },
                 {
-                    "name": "",
-                    "id": "72f169a1-eb25-448c-83e9-a30a960fa139",
-                    "path": "<Mouse>/leftButton",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Attack",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
                     "name": "2D Vector",
                     "id": "29fbe62b-fb08-47a4-b636-fd3a3185251a",
                     "path": "2DVector",
@@ -110,28 +99,6 @@
                     "action": "Look",
                     "isComposite": true,
                     "isPartOfComposite": false
-                },
-                {
-                    "name": "up",
-                    "id": "03fe8e6d-d406-4903-bdcf-0965d6075f8c",
-                    "path": "<Keyboard>/upArrow",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Look",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "down",
-                    "id": "d5435b3f-8843-4bd9-b724-65e279a9e886",
-                    "path": "<Keyboard>/downArrow",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Look",
-                    "isComposite": false,
-                    "isPartOfComposite": true
                 },
                 {
                     "name": "left",
@@ -154,11 +121,44 @@
                     "action": "Look",
                     "isComposite": false,
                     "isPartOfComposite": true
+                },
+                {
+                    "name": "2D Vector",
+                    "id": "e62872d0-69f2-48bc-b966-af4a65b1e95c",
+                    "path": "2DVector",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Zoom",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "left",
+                    "id": "ec6b7a39-0b4e-4ffc-8f4c-6dd6ceb12bdd",
+                    "path": "<Keyboard>/upArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Zoom",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "74585229-385a-4505-a2a8-f449ea76eb04",
+                    "path": "<Keyboard>/downArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Zoom",
+                    "isComposite": false,
+                    "isPartOfComposite": true
                 }
             ]
         },
         {
-            "name": "Interact",
+            "name": "PlayerInteract",
             "id": "77d34847-5e0e-4c8d-a359-53b1e150b645",
             "actions": [
                 {
@@ -174,6 +174,15 @@
                     "name": "OptionMenu",
                     "type": "Button",
                     "id": "3bb05270-708d-440f-8e6b-afc44fb1a587",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Attack",
+                    "type": "Button",
+                    "id": "c00a775d-db60-4f1d-b75c-cd3ca605b3ee",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -200,6 +209,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "OptionMenu",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "f094e5bc-1101-486c-a40a-f32e0f07a688",
+                    "path": "<Keyboard>/shift",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Attack",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

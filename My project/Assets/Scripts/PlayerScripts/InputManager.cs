@@ -1,6 +1,5 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
+
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -8,10 +7,14 @@ public class InputManager : MonoBehaviour
 {
     public event Action<Vector2> onMove;
     public event Action<Vector2> onLook;
+    public event Action<Vector2> onZoom;
+    public event Action<bool> onAttack;
+    public event Action<bool> onOptionmenu;
 
     private Inputs inputs;
     private Vector2 moveInput;
     private Vector2 lookInput;
+    private Vector2 zoomInput;
 
     private void OnEnable()
     {
@@ -28,19 +31,25 @@ public class InputManager : MonoBehaviour
     {
         inputs = new Inputs();
 
-       
+
         inputs.PlayerMovement.Move.performed += OnMove;
         inputs.PlayerMovement.Look.performed += OnLook;
+        inputs.PlayerMovement.Zoom.performed += OnZoom;
+
+        inputs.PlayerInteract.Attack.performed += OnAttack;
+        inputs.PlayerInteract.OptionMenu.performed += OnOptionmenu;
     }
 
     private void EnableInput()
     {
         inputs.PlayerMovement.Enable();
+        inputs.PlayerInteract.Enable();
     }
 
     private void DisableInput()
     {
         inputs.PlayerMovement.Disable();
+        inputs.PlayerInteract.Disable();
     }
 
     private void OnMove(InputAction.CallbackContext context)
@@ -55,9 +64,27 @@ public class InputManager : MonoBehaviour
         onLook?.Invoke(lookInput);
     }
 
+    private void OnZoom(InputAction.CallbackContext context)
+    {
+        zoomInput = context.ReadValue<Vector2>();
+        onZoom?.Invoke(zoomInput);
+    }
+
+    private void OnAttack(InputAction.CallbackContext context)
+    {
+        bool isAttacking = context.ReadValueAsButton();
+        onAttack?.Invoke(isAttacking);
+    }
+
+    private void OnOptionmenu(InputAction.CallbackContext context)
+    {
+        bool isInteracting = context.ReadValueAsButton();
+        onOptionmenu?.Invoke(isInteracting);
+    }
+
     private void Update()
     {
-        
+
         if (onMove != null)
         {
             onMove(moveInput);
@@ -68,6 +95,10 @@ public class InputManager : MonoBehaviour
             onLook(lookInput);
         }
 
+        if (onZoom != null)
+        {
+            onZoom(zoomInput);
+        }
     }
 
 }
