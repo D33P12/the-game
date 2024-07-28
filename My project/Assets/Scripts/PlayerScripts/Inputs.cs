@@ -184,7 +184,7 @@ public partial class @Inputs: IInputActionCollection2, IDisposable
             ""id"": ""77d34847-5e0e-4c8d-a359-53b1e150b645"",
             ""actions"": [
                 {
-                    ""name"": ""Pickup/Drop"",
+                    ""name"": ""Use"",
                     ""type"": ""Button"",
                     ""id"": ""83aac7d3-4c8a-49fc-af5b-bb19bdbd47a7"",
                     ""expectedControlType"": ""Button"",
@@ -215,18 +215,18 @@ public partial class @Inputs: IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""b012c214-7ebd-47b8-9170-300d53faaf19"",
-                    ""path"": ""<Keyboard>/e"",
+                    ""path"": ""<Keyboard>/shift"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Pickup/Drop"",
+                    ""action"": ""Use"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
                 {
                     ""name"": """",
                     ""id"": ""ed77cdc7-41e6-460a-a32a-40acd262b422"",
-                    ""path"": ""<Keyboard>/tab"",
+                    ""path"": ""<Keyboard>/escape"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -237,7 +237,7 @@ public partial class @Inputs: IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""f094e5bc-1101-486c-a40a-f32e0f07a688"",
-                    ""path"": ""<Keyboard>/shift"",
+                    ""path"": ""<Keyboard>/space"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -257,7 +257,7 @@ public partial class @Inputs: IInputActionCollection2, IDisposable
         m_PlayerMovement_Zoom = m_PlayerMovement.FindAction("Zoom", throwIfNotFound: true);
         // PlayerInteract
         m_PlayerInteract = asset.FindActionMap("PlayerInteract", throwIfNotFound: true);
-        m_PlayerInteract_PickupDrop = m_PlayerInteract.FindAction("Pickup/Drop", throwIfNotFound: true);
+        m_PlayerInteract_Use = m_PlayerInteract.FindAction("Use", throwIfNotFound: true);
         m_PlayerInteract_OptionMenu = m_PlayerInteract.FindAction("OptionMenu", throwIfNotFound: true);
         m_PlayerInteract_Attack = m_PlayerInteract.FindAction("Attack", throwIfNotFound: true);
     }
@@ -383,14 +383,14 @@ public partial class @Inputs: IInputActionCollection2, IDisposable
     // PlayerInteract
     private readonly InputActionMap m_PlayerInteract;
     private List<IPlayerInteractActions> m_PlayerInteractActionsCallbackInterfaces = new List<IPlayerInteractActions>();
-    private readonly InputAction m_PlayerInteract_PickupDrop;
+    private readonly InputAction m_PlayerInteract_Use;
     private readonly InputAction m_PlayerInteract_OptionMenu;
     private readonly InputAction m_PlayerInteract_Attack;
     public struct PlayerInteractActions
     {
         private @Inputs m_Wrapper;
         public PlayerInteractActions(@Inputs wrapper) { m_Wrapper = wrapper; }
-        public InputAction @PickupDrop => m_Wrapper.m_PlayerInteract_PickupDrop;
+        public InputAction @Use => m_Wrapper.m_PlayerInteract_Use;
         public InputAction @OptionMenu => m_Wrapper.m_PlayerInteract_OptionMenu;
         public InputAction @Attack => m_Wrapper.m_PlayerInteract_Attack;
         public InputActionMap Get() { return m_Wrapper.m_PlayerInteract; }
@@ -402,9 +402,9 @@ public partial class @Inputs: IInputActionCollection2, IDisposable
         {
             if (instance == null || m_Wrapper.m_PlayerInteractActionsCallbackInterfaces.Contains(instance)) return;
             m_Wrapper.m_PlayerInteractActionsCallbackInterfaces.Add(instance);
-            @PickupDrop.started += instance.OnPickupDrop;
-            @PickupDrop.performed += instance.OnPickupDrop;
-            @PickupDrop.canceled += instance.OnPickupDrop;
+            @Use.started += instance.OnUse;
+            @Use.performed += instance.OnUse;
+            @Use.canceled += instance.OnUse;
             @OptionMenu.started += instance.OnOptionMenu;
             @OptionMenu.performed += instance.OnOptionMenu;
             @OptionMenu.canceled += instance.OnOptionMenu;
@@ -415,9 +415,9 @@ public partial class @Inputs: IInputActionCollection2, IDisposable
 
         private void UnregisterCallbacks(IPlayerInteractActions instance)
         {
-            @PickupDrop.started -= instance.OnPickupDrop;
-            @PickupDrop.performed -= instance.OnPickupDrop;
-            @PickupDrop.canceled -= instance.OnPickupDrop;
+            @Use.started -= instance.OnUse;
+            @Use.performed -= instance.OnUse;
+            @Use.canceled -= instance.OnUse;
             @OptionMenu.started -= instance.OnOptionMenu;
             @OptionMenu.performed -= instance.OnOptionMenu;
             @OptionMenu.canceled -= instance.OnOptionMenu;
@@ -449,7 +449,7 @@ public partial class @Inputs: IInputActionCollection2, IDisposable
     }
     public interface IPlayerInteractActions
     {
-        void OnPickupDrop(InputAction.CallbackContext context);
+        void OnUse(InputAction.CallbackContext context);
         void OnOptionMenu(InputAction.CallbackContext context);
         void OnAttack(InputAction.CallbackContext context);
     }

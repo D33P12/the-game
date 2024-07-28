@@ -9,6 +9,7 @@ public class InputManager : MonoBehaviour
     public event Action<Vector2> onZoom;
     public event Action<bool> onAttack;
     public event Action<bool> onOptionmenu;
+    public event Action<bool> onUse;
 
     private Inputs inputs;
     private Vector2 moveInput;
@@ -37,6 +38,8 @@ public class InputManager : MonoBehaviour
 
         inputs.PlayerInteract.Attack.performed += OnAttack;
         inputs.PlayerInteract.OptionMenu.performed += OnOptionmenu;
+        inputs.PlayerInteract.Use.performed += OnUse;
+        
     }
 
     private void EnableInput()
@@ -79,6 +82,11 @@ public class InputManager : MonoBehaviour
     {
         bool isInteracting = context.ReadValueAsButton();
         onOptionmenu?.Invoke(isInteracting);
+    }
+    private void OnUse(InputAction.CallbackContext context)
+    {
+        bool isInteracting1 = context.ReadValueAsButton();
+        onUse?.Invoke(isInteracting1);
     }
 
     private void Update()

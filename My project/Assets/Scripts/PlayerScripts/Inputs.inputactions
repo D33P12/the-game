@@ -162,7 +162,7 @@
             "id": "77d34847-5e0e-4c8d-a359-53b1e150b645",
             "actions": [
                 {
-                    "name": "Pickup/Drop",
+                    "name": "Use",
                     "type": "Button",
                     "id": "83aac7d3-4c8a-49fc-af5b-bb19bdbd47a7",
                     "expectedControlType": "Button",
@@ -193,18 +193,18 @@
                 {
                     "name": "",
                     "id": "b012c214-7ebd-47b8-9170-300d53faaf19",
-                    "path": "<Keyboard>/e",
+                    "path": "<Keyboard>/shift",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Pickup/Drop",
+                    "action": "Use",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
                 {
                     "name": "",
                     "id": "ed77cdc7-41e6-460a-a32a-40acd262b422",
-                    "path": "<Keyboard>/tab",
+                    "path": "<Keyboard>/escape",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -215,7 +215,7 @@
                 {
                     "name": "",
                     "id": "f094e5bc-1101-486c-a40a-f32e0f07a688",
-                    "path": "<Keyboard>/shift",
+                    "path": "<Keyboard>/space",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
