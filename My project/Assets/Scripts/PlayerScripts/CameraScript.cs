@@ -39,7 +39,7 @@ public class CameraScript : MonoBehaviour
         if (_camera.orthographic)
         {
             float zoomChange = zoomValue.x;
-            float newSize = Mathf.Clamp(_camera.orthographicSize - zoomChange, 6f, 11f);
+            float newSize = Mathf.Clamp(_camera.orthographicSize - zoomChange, 3f, 15f);
             _camera.orthographicSize = newSize;
         }
     }

@@ -369,6 +369,7 @@
 "Assets/Scripts/GameManager.cs"
 "Assets/Scripts/ItemsScripts/AttackScript.cs"
 "Assets/Scripts/ItemsScripts/Door1.cs"
+"Assets/Scripts/ItemsScripts/FireAmmo.cs"
 "Assets/Scripts/ItemsScripts/FlameScript.cs"
 "Assets/Scripts/ItemsScripts/KeysScript.cs"
 "Assets/Scripts/PlayerScripts/CameraScript.cs"
