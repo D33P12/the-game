@@ -95,6 +95,7 @@ public class InputManager : MonoBehaviour
         if (onMove != null)
         {
             onMove(moveInput);
+
         }
 
         if (onLook != null)

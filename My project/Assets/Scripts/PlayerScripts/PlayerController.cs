@@ -15,7 +15,8 @@ public class PlayerController : MonoBehaviour
 
     public GameObject lightToggle;
 
-    
+    private Animator animator;
+
     private bool isNearSwitch = false;
 
     private Vector3 _movementDirection;
@@ -24,8 +25,8 @@ public class PlayerController : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
       
        lightToggle.SetActive(false);
-        
-        
+        animator = GetComponent<Animator>();
+
     }
     private void OnEnable()
     {
@@ -48,6 +49,7 @@ public class PlayerController : MonoBehaviour
     private void Update()
     {
         HandleRotation();
+        UpdateAnimation();
     }
     private void OnMove(Vector2 inputValue)
     {
@@ -91,17 +93,32 @@ public class PlayerController : MonoBehaviour
     private void HandleMovement()
     {
 
-        Vector3 velocity = _movementDirection * walkSpeed;
-        playerRigidbody.velocity = new Vector3(velocity.x, playerRigidbody.velocity.y, velocity.z);
-
+          Vector3 velocity = _movementDirection * walkSpeed;
+          playerRigidbody.velocity = new Vector3(velocity.x, playerRigidbody.velocity.y, velocity.z);
+    
     }
 
     private void HandleRotation()
     {
 
-        playerTransform.localRotation = Quaternion.Euler(0, yRotation, 0);
+         playerTransform.localRotation = Quaternion.Euler(0, yRotation, 0);
 
     }
-    
+    private void UpdateAnimation()
+    {
+
+        Vector3 localVelocity = playerTransform.InverseTransformDirection(playerRigidbody.velocity);
+
+        float forwardSpeed = localVelocity.x; 
+        float sideSpeed = localVelocity.z; 
+
+       
+        sideSpeed = Mathf.Clamp(sideSpeed, -1f, 1f); 
+
+       
+        animator.SetFloat("forwardSpeed", forwardSpeed);
+        animator.SetFloat("sideSpeed", sideSpeed);
+
+    }
 
 }
