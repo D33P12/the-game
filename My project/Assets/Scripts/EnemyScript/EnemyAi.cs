@@ -15,7 +15,9 @@ public class EnemyAI : MonoBehaviour
     
     [SerializeField] float patrolRadius = 3f;
     [SerializeField] List<Transform> patrolPoints = new List<Transform>();
-
+    public PlayerHealthScript playerHealth;
+    [SerializeField]
+    public float damage;
     int currentPatrolPoint = 0;
     AIState state;
     NavMeshAgent agent;
@@ -26,6 +28,9 @@ public class EnemyAI : MonoBehaviour
     [SerializeField] float attackRange = 2f; 
     [SerializeField] float attackCooldown = 1f; 
     float attackTimer = 0f;
+
+    
+    
 
     private Animator anim;
     void Start()
@@ -38,7 +43,7 @@ public class EnemyAI : MonoBehaviour
     }
     void ChangeState(AIState newState)
     {
-        Debug.Log($"Changing state from {state} to {newState}");
+
         state = newState;
         idleTimer = 0f;
         attackTimer = 0f;
@@ -47,7 +52,7 @@ public class EnemyAI : MonoBehaviour
 
     void CheckForPlayer()
     {
-        if (DistanceCheck(transform.position, playerObject.transform.position, playerDistance))
+        if (DistanceCheck(transform.position, playerObject.transform.position, playerDistance) &&  state != AIState.ATTACK)
         {
             ChangeState(AIState.CHASE);
         }
@@ -68,11 +73,13 @@ public class EnemyAI : MonoBehaviour
                 ChangeState(AIState.PATROL);
             }
         }
+        
     }
 
     bool DistanceCheck(Vector3 position1, Vector3 position2, float distance)
     {
-        return (position1 - position2).magnitude < distance;
+        float currentDistance = Vector3.Distance(position1, position2); 
+        return currentDistance < distance;
     }
 
     void Update()
@@ -142,10 +149,12 @@ public class EnemyAI : MonoBehaviour
     {
         if (DistanceCheck(transform.position, playerObject.transform.position, attackRange))
         {
+            Debug.Log("attackingoutside");
             attackTimer += Time.deltaTime;
             if (attackTimer >= attackCooldown)
             {
-                
+                Debug.Log("attacking");
+                PerformAttack();
                 attackTimer = 0f;
             }
         }
@@ -153,7 +162,18 @@ public class EnemyAI : MonoBehaviour
         {
             ChangeState(AIState.CHASE);
         }
+
         FacePlayer();
+    }
+    void PerformAttack()
+    {
+        if (playerHealth != null)
+        {
+           
+            playerHealth.phealth -= damage;
+          
+        }
+       
     }
 
     void Idle()
@@ -179,7 +199,7 @@ public class EnemyAI : MonoBehaviour
 
     private void UpdateAnimationState()
     {
-       
+
         anim.SetBool("isIdling", state == AIState.IDLE);
         anim.SetBool("isWalking", state == AIState.PATROL);
         anim.SetBool("isRunning", state == AIState.CHASE);

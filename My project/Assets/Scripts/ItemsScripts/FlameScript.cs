@@ -1,5 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
+
 using UnityEngine;
 
 public class FlameScript : MonoBehaviour
@@ -8,7 +7,7 @@ public class FlameScript : MonoBehaviour
 
     void Awake()
     {
-        Destroy(gameObject, life); // Destroy bullet after 'life' seconds
+        Destroy(gameObject, life); 
     }
     public LayerMask enemyLayer;
 

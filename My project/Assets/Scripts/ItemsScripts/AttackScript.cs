@@ -1,7 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
 using TMPro;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class AttackScript : MonoBehaviour
@@ -16,8 +13,6 @@ public class AttackScript : MonoBehaviour
     [SerializeField] private TextMeshProUGUI ammoText;
     [SerializeField] private TextMeshProUGUI noammoText;
 
-    [SerializeField] private float displayDuration = 5f;
-    private Coroutine hideCoroutine;
     private int currentAmmo;
 
     private void Start()
@@ -54,27 +49,15 @@ public class AttackScript : MonoBehaviour
                 fireSound.Play();
             }
 
-            if (currentAmmo == 0)
-            {
-                noammoText.text = "No Flames Left";
-            }
-
             currentAmmo--;
         }
-       
 
     }
     public void AddAmmo(int amount)
     {
         currentAmmo = Mathf.Clamp(currentAmmo + 1 + amount, 0, maxAmmo);
-        Debug.Log("Ammo picked up! Current ammo: " + currentAmmo);
+       
         UpdateAmmoDisplay();
-
-        if (currentAmmo >= 0)
-        {
-            noammoText.text = "Flames added";
-        }
-      
 
     }
     private void UpdateAmmoDisplay()
@@ -82,18 +65,17 @@ public class AttackScript : MonoBehaviour
         if (ammoText != null)
         {
             ammoText.text = $"Flames: {currentAmmo}/{maxAmmo}";
-          
+  
         }
-        if (hideCoroutine != null)
+        if (currentAmmo == 0)
         {
-            StopCoroutine(hideCoroutine);
+            noammoText.text = "No Flames Left";
+            noammoText.enabled = true;
         }
-        hideCoroutine = StartCoroutine(HideAmmoText());
-
+        else if(currentAmmo > 0)
+        {
+            noammoText.enabled = false;
+        }
     }
-    private IEnumerator HideAmmoText()
-    {
-        yield return new WaitForSeconds(displayDuration);
-        noammoText.enabled = false;
-    }
+   
 }

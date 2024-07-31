@@ -126,10 +126,12 @@ MonoBehaviour:
   chaseSound: {fileID: 0}
   playerObject: {fileID: 0}
   playerDistance: 10
+  patrolRadius: 3
   patrolPoints:
   - {fileID: 0}
   - {fileID: 0}
-  patrolRadius: 3
+  playerHealth: {fileID: 0}
+  damage: 29
   idleDelay: 3
   attackRange: 5
   attackCooldown: 1
