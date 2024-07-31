@@ -4,6 +4,7 @@ using UnityEngine;
 public class FlameScript : MonoBehaviour
 {
     public float life = 9;
+    public float damage = 30f;
 
     void Awake()
     {
@@ -13,12 +14,12 @@ public class FlameScript : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-
-        if (other.CompareTag("Enemy"))
+        EnemyAI enemyHealth = other.GetComponent<EnemyAI>();
+       
+        if (enemyHealth != null)
         {
-            
-            Destroy(other.gameObject);
-
+            enemyHealth.TakeDamage(damage);
+            Destroy(gameObject);
         }
     }
 

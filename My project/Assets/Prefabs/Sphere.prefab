@@ -147,6 +147,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   life: 9
+  damage: 30
   enemyLayer:
     serializedVersion: 2
     m_Bits: 8

@@ -446,11 +446,11 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 2.2
+  near clip plane: 1.79
   far clip plane: 40.13
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 3
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -3085,14 +3085,14 @@ Canvas:
   m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_Camera: {fileID: 48350376}
   m_PlaneDistance: 100
-  m_PixelPerfect: 0
+  m_PixelPerfect: 1
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_VertexColorAlwaysGammaSpace: 0
+  m_VertexColorAlwaysGammaSpace: 1
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
@@ -4439,6 +4439,10 @@ PrefabInstance:
       value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 3044475170114704085, guid: dadb81f9e6153ef478f0933345f49187, type: 3}
+      propertyPath: ehealthbar
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3044475170114704085, guid: dadb81f9e6153ef478f0933345f49187, type: 3}
       propertyPath: attackRange
       value: 2
       objectReference: {fileID: 0}
@@ -4456,7 +4460,7 @@ PrefabInstance:
       objectReference: {fileID: 11864906}
     - target: {fileID: 3044475170114704085, guid: dadb81f9e6153ef478f0933345f49187, type: 3}
       propertyPath: attackCooldown
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3044475170114704085, guid: dadb81f9e6153ef478f0933345f49187, type: 3}
       propertyPath: playerDistance
