@@ -55,7 +55,7 @@ public class AttackScript : MonoBehaviour
     }
     public void AddAmmo(int amount)
     {
-        currentAmmo = Mathf.Clamp(currentAmmo + 1 + amount, 0, maxAmmo);
+        currentAmmo = Mathf.Clamp(currentAmmo + amount, 0, maxAmmo);
        
         UpdateAmmoDisplay();
 

@@ -225,14 +225,6 @@ public class EnemyAI : MonoBehaviour
     {
         currentHealth -= damageAmount;
         
-        if (currentHealth <= 0)
-        {
-            Die();
-        }
     }
 
-    private void Die()
-    {
-        Destroy(gameObject);
-    }
 }

@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -8,6 +9,8 @@ public class OptionMenu : MonoBehaviour
     [SerializeField] private GameObject pauseMenu;
 
     private bool isPaused = false;
+
+    public TextMeshProUGUI keysText;
 
     private void Start()
     {
@@ -68,12 +71,16 @@ public class OptionMenu : MonoBehaviour
     {
         Time.timeScale = 1; 
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        GameManager.Keys = 0;
+        UpdateKeysText();
     }
 
     public void MainMenu()
     {
         Time.timeScale = 1;
         SceneManager.LoadScene(0);
+        GameManager.Keys = 0;
+        UpdateKeysText();
     }
 
     public void PlayGame()
@@ -89,4 +96,12 @@ public class OptionMenu : MonoBehaviour
         UnityEditor.EditorApplication.isPlaying = false;
 
     }
+    void UpdateKeysText()
+    {
+        if (keysText != null)
+        {
+            keysText.text = "Keys: " + GameManager.Keys;
+        }
+    }
+
 }

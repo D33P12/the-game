@@ -1,0 +1,91 @@
+using System.Collections;
+using System.Collections.Generic;
+using TMPro;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+
+public class DeathUIScript : MonoBehaviour
+{
+    [SerializeField] PlayerHealthScript playerHealth;
+    public Canvas EndGameCanvas;
+    public GameObject pSpawn;
+    public TextMeshProUGUI keysText;
+   
+
+    public GameObject spawnPosition;
+
+    
+    public Quaternion spawnRotation = Quaternion.identity;
+
+    void Start()
+    {
+
+        if (EndGameCanvas != null)
+        {
+            EndGameCanvas.enabled = false;
+        }
+
+    }
+
+
+    void Update()
+    {
+        GameOverHealth();
+    }
+    public void GameOverHealth()
+    {
+        if (playerHealth != null && playerHealth.phealth <= 0)
+        {
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
+
+            Time.timeScale = 0;
+
+            if (EndGameCanvas != null)
+            {
+                EndGameCanvas.enabled = true;
+            }
+           
+
+        }
+    }
+    public void MainMenu()
+    {
+        Time.timeScale = 1;
+        SceneManager.LoadScene(0);
+        GameManager.ResetKeys();
+        UpdateKeysText();
+        if (pSpawn != null && spawnPosition != null)
+        {
+            
+            Instantiate(pSpawn, spawnPosition.transform.position, spawnPosition.transform.rotation);
+        }
+
+    }
+    public void ExitGame()
+    {
+        Application.Quit();
+
+        UnityEditor.EditorApplication.isPlaying = false;
+
+    }
+    public void RestartGame()
+    {
+        Time.timeScale = 1;
+        SceneManager.LoadScene(1);
+        GameManager.ResetKeys();
+        UpdateKeysText();
+        if (pSpawn != null && spawnPosition != null)
+        {
+
+            Instantiate(pSpawn, spawnPosition.transform.position, spawnPosition.transform.rotation);
+        }
+    }
+    void UpdateKeysText()
+    {
+        if (keysText != null)
+        {
+            keysText.text = "Keys: " + GameManager.Keys;
+        }
+    }
+}

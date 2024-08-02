@@ -6,6 +6,7 @@ public class PlayerHealthScript : MonoBehaviour
     [SerializeField] public float phealth;
     [SerializeField] public float pmaxhealth;
     [SerializeField] public Image healthCircle;
+    
 
     void Start()
     {
@@ -16,6 +17,7 @@ public class PlayerHealthScript : MonoBehaviour
     void Update()
     {
         UpdateHealthUI();
+      
     }
 
     public void AddHealth(int hamount)
@@ -30,4 +32,5 @@ public class PlayerHealthScript : MonoBehaviour
     {
         healthCircle.fillAmount = Mathf.Clamp(phealth / pmaxhealth, 0, 1);
     }
+   
 }
