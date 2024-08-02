@@ -1,0 +1,511 @@
+Using pre-set license
+Built from '2022.3/staging' branch; Version is '2022.3.26f1 (ec6cd8118806) revision 15494360'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22631) 64bit Core' Language: 'en' Physical Memory: 32469 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2022.3.26f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker12
+-projectPath
+D:/pppp/the game/My project
+-logFile
+Logs/AssetImportWorker12.log
+-srvPort
+59929
+Successfully changed project path to: D:/pppp/the game/My project
+D:/pppp/the game/My project
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [24160] Host "[IP] 192.168.1.159 [Port] 0 [Flags] 2 [Guid] 3857354593 [EditorId] 3857354593 [Version] 1048832 [Id] WindowsEditor(7,MSI) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [24160] Host "[IP] 192.168.1.159 [Port] 0 [Flags] 2 [Guid] 3857354593 [EditorId] 3857354593 [Version] 1048832 [Id] WindowsEditor(7,MSI) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+[Physics::Module] Initialized MultithreadedJobDispatcher with 31 workers.
+Refreshing native plugins compatible for Editor in 12.17 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.26f1 (ec6cd8118806)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.26f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/pppp/the game/My project/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 4080 Laptop GPU (ID=0x27a0)
+    Vendor:   NVIDIA
+    VRAM:     11997 MB
+    Driver:   32.0.15.5585
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.26f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.26f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.26f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56740
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.26f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.26f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.26f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.26f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.26f1/Editor/Data/PlaybackEngines/MetroSupport/UnityEditor.UWP.Extensions.dll
+Registered in 0.030563 seconds.
+- Loaded All Assemblies, in  0.671 seconds
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+[usbmuxd] Start listen thread
+[usbmuxd] Listen thread started
+Native extension for iOS target not found
+Native extension for Android target not found
+Android Extension - Scanning For ADB Devices 1517 ms
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.937 seconds
+Domain Reload Profiling: 2603ms
+	BeginReloadAssembly (296ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (27ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (94ms)
+	LoadAllAssembliesAndSetupDomain (241ms)
+		LoadAssemblies (302ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (227ms)
+			TypeCache.Refresh (226ms)
+				TypeCache.ScanAssembly (201ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (1938ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1889ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (1673ms)
+			SetLoadedEditorAssemblies (5ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (3ms)
+			ProcessInitializeOnLoadAttributes (141ms)
+			ProcessInitializeOnLoadMethodAttributes (67ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.718 seconds
+Refreshing native plugins compatible for Editor in 2.23 ms, found 3 plugins.
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Package Manager log level set to [2]
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.545 seconds
+Domain Reload Profiling: 1259ms
+	BeginReloadAssembly (195ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (3ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (17ms)
+	RebuildCommonClasses (39ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (51ms)
+	LoadAllAssembliesAndSetupDomain (419ms)
+		LoadAssemblies (376ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (180ms)
+			TypeCache.Refresh (163ms)
+				TypeCache.ScanAssembly (147ms)
+			ScanForSourceGeneratedMonoScriptInfo (11ms)
+			ResolveRequiredComponents (5ms)
+	FinalizeReload (546ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (394ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (37ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (57ms)
+			ProcessInitializeOnLoadAttributes (261ms)
+			ProcessInitializeOnLoadMethodAttributes (18ms)
+			AfterProcessingInitializeOnLoad (18ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (20ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.13 seconds
+Refreshing native plugins compatible for Editor in 2.01 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3582 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 40 unused Assets / (58.6 KB). Loaded Objects now: 4052.
+Memory consumption went from 147.9 MB to 147.9 MB.
+Total: 4.277600 ms (FindLiveObjects: 0.311400 ms CreateObjectMapping: 0.092100 ms MarkObjects: 3.786100 ms  DeleteObjects: 0.087200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 182884.247477 seconds.
+  path: Assets/New Folder/SyntyStudios/PolygonAdventure/Models/Collision/SM_Env_Hedge_01_Convex 1.asset
+  artifactKey: Guid(0eff5b1d0d63b9d49b276a8f11c61e8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New Folder/SyntyStudios/PolygonAdventure/Models/Collision/SM_Env_Hedge_01_Convex 1.asset using Guid(0eff5b1d0d63b9d49b276a8f11c61e8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55ba72f5068d526f86baf086690598be') in 0.071555 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/New Folder/SyntyStudios/PolygonAdventure/Models/Collision/SM_Env_GroundMounds_02_Convex.asset
+  artifactKey: Guid(4b5473ecc2393f34e9ac04d59799075b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New Folder/SyntyStudios/PolygonAdventure/Models/Collision/SM_Env_GroundMounds_02_Convex.asset using Guid(4b5473ecc2393f34e9ac04d59799075b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0fa8b77d78f95cc3a79967b01240f9e') in 0.019097 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/New Folder/SyntyStudios/PolygonAdventure/Models/Collision/SM_Env_Flower_08_Convex.asset
+  artifactKey: Guid(0ac75c44fcc863e418e3e88e992ce6ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New Folder/SyntyStudios/PolygonAdventure/Models/Collision/SM_Env_Flower_08_Convex.asset using Guid(0ac75c44fcc863e418e3e88e992ce6ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd718522fedd2a59fdd71df8313a4330f') in 0.008074 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/New Folder/SyntyStudios/PolygonAdventure/Models/Collision/SM_Env_GroundMounds_01_Convex.asset
+  artifactKey: Guid(f3f40a863978dcd45932dd8f2b98a1bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New Folder/SyntyStudios/PolygonAdventure/Models/Collision/SM_Env_GroundMounds_01_Convex.asset using Guid(f3f40a863978dcd45932dd8f2b98a1bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72eb99310ada375e18f94463349f5fb9') in 0.020858 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/New Folder/SyntyStudios/PolygonAdventure/Models/Collision/SM_Env_DirtMound_01_Convex 1.asset
+  artifactKey: Guid(d099d812b220e3343bdcc5c7397dbece) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New Folder/SyntyStudios/PolygonAdventure/Models/Collision/SM_Env_DirtMound_01_Convex 1.asset using Guid(d099d812b220e3343bdcc5c7397dbece) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a4a592089389abd97714ebec0433f73') in 0.011488 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/New Folder/SyntyStudios/PolygonAdventure/Models/Collision/SM_Env_Bridge_01_Convex.asset
+  artifactKey: Guid(f712b154a60f615488dcd77276325bae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New Folder/SyntyStudios/PolygonAdventure/Models/Collision/SM_Env_Bridge_01_Convex.asset using Guid(f712b154a60f615488dcd77276325bae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa168228cdf931eebfff1cd38da9c4ec') in 0.018830 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000123 seconds.
+  path: Assets/New Folder/SyntyStudios/PolygonAdventure/Models/Collision/SM_Env_DirtMound_01_Convex.asset
+  artifactKey: Guid(82b85c5d9890ccb4185c1558ab8bbf24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New Folder/SyntyStudios/PolygonAdventure/Models/Collision/SM_Env_DirtMound_01_Convex.asset using Guid(82b85c5d9890ccb4185c1558ab8bbf24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fcbdde9d814819941a9ef26eb2799257') in 0.011337 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/New Folder/SyntyStudios/PolygonAdventure/Models/Collision/SM_Bld_Village_04_Convex.asset
+  artifactKey: Guid(26324a966097b4a429b532813083b20a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New Folder/SyntyStudios/PolygonAdventure/Models/Collision/SM_Bld_Village_04_Convex.asset using Guid(26324a966097b4a429b532813083b20a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd578b3b7f88c69965f2fbfa55a09650') in 0.007282 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000081 seconds.
+  path: Assets/New Folder/SyntyStudios/PolygonAdventure/Models/Collision/SM_Bld_Village_04_Convex 1.asset
+  artifactKey: Guid(df7f6e38d43e6d94da40144029effa87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New Folder/SyntyStudios/PolygonAdventure/Models/Collision/SM_Bld_Village_04_Convex 1.asset using Guid(df7f6e38d43e6d94da40144029effa87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9bdb33c1c7bbfcde01feb251bac23fea') in 0.029397 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/New Folder/SyntyStudios/PolygonAdventure/Models/Collision/SM_Env_Flower_07_Convex.asset
+  artifactKey: Guid(7a053fff63f07ca40abe3d549d7a20da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New Folder/SyntyStudios/PolygonAdventure/Models/Collision/SM_Env_Flower_07_Convex.asset using Guid(7a053fff63f07ca40abe3d549d7a20da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cea4ea3835e9dd55b5a260e668311bf5') in 0.014455 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/New Folder/SyntyStudios/PolygonAdventure/Models/Collision/SM_Env_Flower_08_Convex 1.asset
+  artifactKey: Guid(666e45121bdf80042904fad28250ed5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New Folder/SyntyStudios/PolygonAdventure/Models/Collision/SM_Env_Flower_08_Convex 1.asset using Guid(666e45121bdf80042904fad28250ed5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f284bacd08e6225815e0bf102b55a8ab') in 0.016381 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/New Folder/SyntyStudios/PolygonAdventure/Models/Collision/SM_Bld_Village_01_Convex.asset
+  artifactKey: Guid(23fcc85161345aa4b9b303fe6dfe199f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New Folder/SyntyStudios/PolygonAdventure/Models/Collision/SM_Bld_Village_01_Convex.asset using Guid(23fcc85161345aa4b9b303fe6dfe199f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '551e164b3ef48b6c2edcd3ef84b0eb99') in 0.008298 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/New Folder/SyntyStudios/PolygonAdventure/Models/Collision/SM_Bld_Village_01_Convex 1.asset
+  artifactKey: Guid(1a863abaab4ce1746a107a6899e9da2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New Folder/SyntyStudios/PolygonAdventure/Models/Collision/SM_Bld_Village_01_Convex 1.asset using Guid(1a863abaab4ce1746a107a6899e9da2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4eb301b850d085c02946d1cb1b54bf0d') in 0.031996 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/New Folder/SyntyStudios/PolygonAdventure/Models/Collision/SM_Env_DirtMound_01_Snow_Convex.asset
+  artifactKey: Guid(079627d9189263645b168a4046269199) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New Folder/SyntyStudios/PolygonAdventure/Models/Collision/SM_Env_DirtMound_01_Snow_Convex.asset using Guid(079627d9189263645b168a4046269199) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f576332e9a964611eb6a57aed68fda30') in 0.006606 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.025972 seconds.
+  path: Assets/New Folder/SyntyStudios/PolygonAdventure/Models/Collision/SM_Bld_Stall_02_Convex.asset
+  artifactKey: Guid(1795a49f29213e346b8ac4db49fc77b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New Folder/SyntyStudios/PolygonAdventure/Models/Collision/SM_Bld_Stall_02_Convex.asset using Guid(1795a49f29213e346b8ac4db49fc77b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9d791beac72741a75530450640c7488') in 0.006320 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/New Folder/SyntyStudios/PolygonAdventure/Models/Collision/SM_Bld_Stall_Cover_02_Convex 1.asset
+  artifactKey: Guid(95668d6bbc03d0b47ac925064a9b1d1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New Folder/SyntyStudios/PolygonAdventure/Models/Collision/SM_Bld_Stall_Cover_02_Convex 1.asset using Guid(95668d6bbc03d0b47ac925064a9b1d1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1199666b5cfef3e9b42b0145800af92') in 0.014274 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.120395 seconds.
+  path: Assets/New Folder/SyntyStudios/PolygonAdventure/Models/Collision/SM_Bld_Fence_01_Snow_Convex 1.asset
+  artifactKey: Guid(c6cd4150d7c9bc44299ab69d099e74d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New Folder/SyntyStudios/PolygonAdventure/Models/Collision/SM_Bld_Fence_01_Snow_Convex 1.asset using Guid(c6cd4150d7c9bc44299ab69d099e74d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7cbca59f200f5620de8680153e49026') in 0.014623 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/New Folder/SyntyStudios/PolygonAdventure/Models/Collision/SM_Bld_FencePost_01_Convex 1.asset
+  artifactKey: Guid(83125438906fa6e4caaec248792267a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New Folder/SyntyStudios/PolygonAdventure/Models/Collision/SM_Bld_FencePost_01_Convex 1.asset using Guid(83125438906fa6e4caaec248792267a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e2ce823855358f6b091466ea26a4ae2') in 0.007122 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 1.375711 seconds.
+  path: Assets/New Folder/SyntyStudios/PolygonAdventure/Models/SM_Bld_Fence_02_Snow.fbx
+  artifactKey: Guid(cb09e6efbb00cd546817bc7660018c2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New Folder/SyntyStudios/PolygonAdventure/Models/SM_Bld_Fence_02_Snow.fbx using Guid(cb09e6efbb00cd546817bc7660018c2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35fe3a44dced7f8ef6623bf25b22333c') in 0.033947 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/New Folder/SyntyStudios/PolygonAdventure/Models/SM_Env_Bush_04.fbx
+  artifactKey: Guid(a77091b9a589728449d4ec79336de5ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New Folder/SyntyStudios/PolygonAdventure/Models/SM_Env_Bush_04.fbx using Guid(a77091b9a589728449d4ec79336de5ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e62793446301a2c1d3e8aa46f200a340') in 0.009996 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000119 seconds.
+  path: Assets/New Folder/SyntyStudios/PolygonAdventure/Models/SM_Env_GroundMounds_08.fbx
+  artifactKey: Guid(3fdcd26d38891d844a88b26268a2d816) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New Folder/SyntyStudios/PolygonAdventure/Models/SM_Env_GroundMounds_08.fbx using Guid(3fdcd26d38891d844a88b26268a2d816) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6be1cde3caf3785e9756032171d380ae') in 0.010675 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000388 seconds.
+  path: Assets/New Folder/SyntyStudios/PolygonAdventure/Models/SM_Env_HillSnow_01.fbx
+  artifactKey: Guid(f3ab7174458f6ba428812efdfe7d2c94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New Folder/SyntyStudios/PolygonAdventure/Models/SM_Env_HillSnow_01.fbx using Guid(f3ab7174458f6ba428812efdfe7d2c94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75c1fd80dbabf3cf0a46c2b679a27acd') in 0.011134 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/New Folder/SyntyStudios/PolygonAdventure/Models/SM_Bld_Market_Snow_01.fbx
+  artifactKey: Guid(b71215d163f7b2e43a5a7d2a8bb824f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New Folder/SyntyStudios/PolygonAdventure/Models/SM_Bld_Market_Snow_01.fbx using Guid(b71215d163f7b2e43a5a7d2a8bb824f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '236deb3805036abb60d6fa980008ea42') in 0.010863 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/New Folder/SyntyStudios/PolygonAdventure/Models/SM_Env_GroundMounds_05.fbx
+  artifactKey: Guid(ba546395530649f439fd63c27d99c5ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New Folder/SyntyStudios/PolygonAdventure/Models/SM_Env_GroundMounds_05.fbx using Guid(ba546395530649f439fd63c27d99c5ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2930b2159c62a708a41b010f6610830f') in 0.009877 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000087 seconds.
+  path: Assets/New Folder/SyntyStudios/PolygonAdventure/Models/SM_Env_FloorTile_05.fbx
+  artifactKey: Guid(57866f6a7e7c90341bd0cf0d03e1831a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New Folder/SyntyStudios/PolygonAdventure/Models/SM_Env_FloorTile_05.fbx using Guid(57866f6a7e7c90341bd0cf0d03e1831a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '682a84b65f29d9757aa44aa5c641ab8f') in 0.010456 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/New Folder/SyntyStudios/PolygonAdventure/Models/SM_Env_Cloud_04.fbx
+  artifactKey: Guid(8b65eee1f83383642aebd1d4d04fb52b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New Folder/SyntyStudios/PolygonAdventure/Models/SM_Env_Cloud_04.fbx using Guid(8b65eee1f83383642aebd1d4d04fb52b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4bb6ebbf252b6abb177c404e5b7fce14') in 0.009953 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/New Folder/SyntyStudios/PolygonAdventure/Models/SM_Bld_Village_03.fbx
+  artifactKey: Guid(644381ffabf5b0f4ea75ad3f96f8d46c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New Folder/SyntyStudios/PolygonAdventure/Models/SM_Bld_Village_03.fbx using Guid(644381ffabf5b0f4ea75ad3f96f8d46c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4bc1c3915c083941fa7fbe9f8d484fef') in 0.019504 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000173 seconds.
+  path: Assets/New Folder/SyntyStudios/PolygonAdventure/Models/SM_Bld_Village_Top_01.fbx
+  artifactKey: Guid(0127970aab9f9e04aa6d15e8c8708d05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New Folder/SyntyStudios/PolygonAdventure/Models/SM_Bld_Village_Top_01.fbx using Guid(0127970aab9f9e04aa6d15e8c8708d05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42a4af43ea840190c0a83d0ec484a3fe') in 0.010720 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000225 seconds.
+  path: Assets/New Folder/SyntyStudios/PolygonAdventure/Models/SM_Bld_Stall_Cover_03.fbx
+  artifactKey: Guid(4a5db1b1b824abb4c8cd24812336de9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New Folder/SyntyStudios/PolygonAdventure/Models/SM_Bld_Stall_Cover_03.fbx using Guid(4a5db1b1b824abb4c8cd24812336de9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8953719701392fe9ec494feecaca7f78') in 0.008533 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 49.040049 seconds.
+  path: Assets/New Folder/SyntyStudios/PolygonSamples/PolygonSciFiCity/Models/SM_Bld_Large_06.fbx
+  artifactKey: Guid(3c92ffafb9693234ba69bdcfd57ad52d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New Folder/SyntyStudios/PolygonSamples/PolygonSciFiCity/Models/SM_Bld_Large_06.fbx using Guid(3c92ffafb9693234ba69bdcfd57ad52d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c82b225102cd16d455876ed121d315e') in 0.040092 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.555 seconds
+Refreshing native plugins compatible for Editor in 4.33 ms, found 3 plugins.
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.055 seconds
+Domain Reload Profiling: 1607ms
+	BeginReloadAssembly (275ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (3ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (25ms)
+	RebuildCommonClasses (22ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (29ms)
+	LoadAllAssembliesAndSetupDomain (218ms)
+		LoadAssemblies (424ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (16ms)
+			TypeCache.Refresh (7ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (8ms)
+	FinalizeReload (1056ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (475ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (54ms)
+			SetLoadedEditorAssemblies (5ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (68ms)
+			ProcessInitializeOnLoadAttributes (314ms)
+			ProcessInitializeOnLoadMethodAttributes (18ms)
+			AfterProcessingInitializeOnLoad (16ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (55ms)
+Refreshing native plugins compatible for Editor in 5.04 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3556 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 24 unused Assets / (31.2 KB). Loaded Objects now: 4066.
+Memory consumption went from 141.9 MB to 141.9 MB.
+Total: 2.835200 ms (FindLiveObjects: 0.221200 ms CreateObjectMapping: 0.180000 ms MarkObjects: 2.355800 ms  DeleteObjects: 0.077000 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: The I/O operation has been aborted because of either a thread exit or an application request.
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

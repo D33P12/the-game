@@ -1,0 +1,633 @@
+Using pre-set license
+Built from '2022.3/staging' branch; Version is '2022.3.26f1 (ec6cd8118806) revision 15494360'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22631) 64bit Core' Language: 'en' Physical Memory: 32469 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2022.3.26f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker27
+-projectPath
+D:/pppp/the game/My project
+-logFile
+Logs/AssetImportWorker27.log
+-srvPort
+62585
+Successfully changed project path to: D:/pppp/the game/My project
+D:/pppp/the game/My project
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [39420] Host "[IP] 192.168.1.159 [Port] 0 [Flags] 2 [Guid] 1428750537 [EditorId] 1428750537 [Version] 1048832 [Id] WindowsEditor(7,MSI) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [39420] Host "[IP] 192.168.1.159 [Port] 0 [Flags] 2 [Guid] 1428750537 [EditorId] 1428750537 [Version] 1048832 [Id] WindowsEditor(7,MSI) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+[Physics::Module] Initialized MultithreadedJobDispatcher with 31 workers.
+Refreshing native plugins compatible for Editor in 7.77 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.26f1 (ec6cd8118806)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.26f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/pppp/the game/My project/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 4080 Laptop GPU (ID=0x27a0)
+    Vendor:   NVIDIA
+    VRAM:     11997 MB
+    Driver:   32.0.15.5585
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.26f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.26f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.26f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56380
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.26f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.26f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.26f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.26f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.26f1/Editor/Data/PlaybackEngines/MetroSupport/UnityEditor.UWP.Extensions.dll
+Registered in 0.018858 seconds.
+- Loaded All Assemblies, in  0.284 seconds
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+[usbmuxd] Start listen thread
+[usbmuxd] Listen thread started
+Native extension for iOS target not found
+Native extension for Android target not found
+Android Extension - Scanning For ADB Devices 1067 ms
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.317 seconds
+Domain Reload Profiling: 1599ms
+	BeginReloadAssembly (99ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (21ms)
+	RebuildNativeTypeToScriptingClass (6ms)
+	initialDomainReloadingComplete (54ms)
+	LoadAllAssembliesAndSetupDomain (101ms)
+		LoadAssemblies (99ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (96ms)
+			TypeCache.Refresh (96ms)
+				TypeCache.ScanAssembly (87ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (1318ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1283ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (1159ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (1ms)
+			ProcessInitializeOnLoadAttributes (65ms)
+			ProcessInitializeOnLoadMethodAttributes (55ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.478 seconds
+Refreshing native plugins compatible for Editor in 2.13 ms, found 3 plugins.
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Package Manager log level set to [2]
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.410 seconds
+Domain Reload Profiling: 885ms
+	BeginReloadAssembly (118ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (3ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (12ms)
+	RebuildCommonClasses (21ms)
+	RebuildNativeTypeToScriptingClass (6ms)
+	initialDomainReloadingComplete (31ms)
+	LoadAllAssembliesAndSetupDomain (299ms)
+		LoadAssemblies (257ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (122ms)
+			TypeCache.Refresh (109ms)
+				TypeCache.ScanAssembly (97ms)
+			ScanForSourceGeneratedMonoScriptInfo (10ms)
+			ResolveRequiredComponents (3ms)
+	FinalizeReload (411ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (307ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (32ms)
+			SetLoadedEditorAssemblies (2ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (43ms)
+			ProcessInitializeOnLoadAttributes (209ms)
+			ProcessInitializeOnLoadMethodAttributes (11ms)
+			AfterProcessingInitializeOnLoad (9ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (9ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
+Refreshing native plugins compatible for Editor in 2.06 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3582 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 40 unused Assets / (58.0 KB). Loaded Objects now: 4052.
+Memory consumption went from 148.0 MB to 147.9 MB.
+Total: 2.385600 ms (FindLiveObjects: 0.151200 ms CreateObjectMapping: 0.052700 ms MarkObjects: 2.102900 ms  DeleteObjects: 0.077900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 82211.861534 seconds.
+  path: Assets/AssetPackages/SyntyStudios/PolygonKnights/Materials/PolyKnights_Character_Mat_Blue.mat
+  artifactKey: Guid(396f7abc9b4541548968e21a142b20d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPackages/SyntyStudios/PolygonKnights/Materials/PolyKnights_Character_Mat_Blue.mat using Guid(396f7abc9b4541548968e21a142b20d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3176745d4f46054bac4e17b841f340e6') in 0.061789 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.041229 seconds.
+  path: Assets/AssetPackages/SyntyStudios/PolygonKnights/Materials/PolyKnights_Mat_01.mat
+  artifactKey: Guid(31b16fd87cf33014c946e9d512d1e03c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPackages/SyntyStudios/PolygonKnights/Materials/PolyKnights_Mat_01.mat using Guid(31b16fd87cf33014c946e9d512d1e03c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '952e0189ea0bca854e30c8900743ab9a') in 0.007555 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.052932 seconds.
+  path: Assets/AssetPackages/SyntyStudios/PolygonKnights/Materials/PolyKnights_Mat_Variation_02_Dark.mat
+  artifactKey: Guid(03e2749ed3366a943a0b176f88f5cdf6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPackages/SyntyStudios/PolygonKnights/Materials/PolyKnights_Mat_Variation_02_Dark.mat using Guid(03e2749ed3366a943a0b176f88f5cdf6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08f8bb55626485e1d27ea9d8fa0acb8e') in 0.013959 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/AssetPackages/SyntyStudios/PolygonKnights/Materials/PolyKnights_Mat_Variation_Snow_To_Grass_Swap.mat
+  artifactKey: Guid(721aadf0358b16248bca382321fdf539) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPackages/SyntyStudios/PolygonKnights/Materials/PolyKnights_Mat_Variation_Snow_To_Grass_Swap.mat using Guid(721aadf0358b16248bca382321fdf539) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f5e9ffebfdc865493b4c7d41e048bc5') in 0.013346 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/AssetPackages/SyntyStudios/PolygonKnights/Materials/PolyKnights_Mat_Variation_04_Dark.mat
+  artifactKey: Guid(f9cb4bce489fa5341b4e11ec3d2f70fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPackages/SyntyStudios/PolygonKnights/Materials/PolyKnights_Mat_Variation_04_Dark.mat using Guid(f9cb4bce489fa5341b4e11ec3d2f70fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '024669164fa601fc4478d654bdc5129c') in 0.012260 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000011 seconds.
+  path: Assets/AssetPackages/SyntyStudios/PolygonKnights/Materials/Statue_Material.mat
+  artifactKey: Guid(bafe633910a509649aeed6fbfe41e1a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPackages/SyntyStudios/PolygonKnights/Materials/Statue_Material.mat using Guid(bafe633910a509649aeed6fbfe41e1a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b98e369d4919ac6b7bfb7abdd4996240') in 0.006674 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/AssetPackages/SyntyStudios/PolygonKnights/Materials/PolyKnights_Mat_Variation_02.mat
+  artifactKey: Guid(5b6cfe83aa80c3f49b9fc2465c359cbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPackages/SyntyStudios/PolygonKnights/Materials/PolyKnights_Mat_Variation_02.mat using Guid(5b6cfe83aa80c3f49b9fc2465c359cbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1fd700b32e08c31f20294d494d70cc9e') in 0.012909 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 1.675350 seconds.
+  path: Assets/AssetPackages/SyntyStudios/PolygonKnights/Models/SM_Bld_ArrowSlit_01_Snow.fbx
+  artifactKey: Guid(74933f0bb423af44b9688bc392b27638) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPackages/SyntyStudios/PolygonKnights/Models/SM_Bld_ArrowSlit_01_Snow.fbx using Guid(74933f0bb423af44b9688bc392b27638) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b759dd23e3a1e31bda21f128680923d') in 0.026516 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.005512 seconds.
+  path: Assets/AssetPackages/SyntyStudios/PolygonKnights/Models/SM_Bld_Castle_Door_01_Snow.fbx
+  artifactKey: Guid(4aff020c5d8093e4595ef1ad34c67149) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPackages/SyntyStudios/PolygonKnights/Models/SM_Bld_Castle_Door_01_Snow.fbx using Guid(4aff020c5d8093e4595ef1ad34c67149) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '032ef532706f7a993bf061b99252b6c7') in 0.019692 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 17
+========================================================================
+Received Import Request.
+  Time since last request: 0.022644 seconds.
+  path: Assets/AssetPackages/SyntyStudios/PolygonKnights/Models/SM_Bld_Castle_Tower_02.fbx
+  artifactKey: Guid(3619d58f35a8e4f4eaefe6efa72e01db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPackages/SyntyStudios/PolygonKnights/Models/SM_Bld_Castle_Tower_02.fbx using Guid(3619d58f35a8e4f4eaefe6efa72e01db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72798714856bfe1d6d1152ac64ccc19c') in 0.011937 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.038900 seconds.
+  path: Assets/AssetPackages/SyntyStudios/PolygonKnights/Models/SM_Bld_Castle_Door_01.fbx
+  artifactKey: Guid(5fb29acfbd82c8348b9c860cae3c7daf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPackages/SyntyStudios/PolygonKnights/Models/SM_Bld_Castle_Door_01.fbx using Guid(5fb29acfbd82c8348b9c860cae3c7daf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '888dcbd6fbc2ec7c8d60caf57fa3d7bb') in 0.028397 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 17
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/AssetPackages/SyntyStudios/PolygonKnights/Models/SM_Bld_Castle_Wall_Gate_01.fbx
+  artifactKey: Guid(f02abd59e0d6e5c47982126d51e3bf5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPackages/SyntyStudios/PolygonKnights/Models/SM_Bld_Castle_Wall_Gate_01.fbx using Guid(f02abd59e0d6e5c47982126d51e3bf5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5459140b180d7647390a0e9edd0f6275') in 0.012266 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/AssetPackages/SyntyStudios/PolygonKnights/Models/SM_Bld_Church_Tower_01.fbx
+  artifactKey: Guid(8c5ec652d67d14b42a99613cd9e7d57e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPackages/SyntyStudios/PolygonKnights/Models/SM_Bld_Church_Tower_01.fbx using Guid(8c5ec652d67d14b42a99613cd9e7d57e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34ee9ff0049ae40552ac8db39fb56aa2') in 0.011814 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/AssetPackages/SyntyStudios/PolygonKnights/Models/SM_Bld_House_Door_01.fbx
+  artifactKey: Guid(a6b188fb7aea5624fa40ae7535d6f6f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPackages/SyntyStudios/PolygonKnights/Models/SM_Bld_House_Door_01.fbx using Guid(a6b188fb7aea5624fa40ae7535d6f6f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24e575024d3d276a619ad3fae07baeb6') in 0.013303 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/AssetPackages/SyntyStudios/PolygonKnights/Models/SM_Bld_House_Chimney_02.fbx
+  artifactKey: Guid(c9cf27c8b6f815648a2d06ced8735ac8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPackages/SyntyStudios/PolygonKnights/Models/SM_Bld_House_Chimney_02.fbx using Guid(c9cf27c8b6f815648a2d06ced8735ac8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69b571af7c75f2e084373557acf3b036') in 0.011995 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/AssetPackages/SyntyStudios/PolygonKnights/Models/SM_Bld_Church_Room_02_Snow.fbx
+  artifactKey: Guid(447263eac4e59af44a7a911ccda40ead) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPackages/SyntyStudios/PolygonKnights/Models/SM_Bld_Church_Room_02_Snow.fbx using Guid(447263eac4e59af44a7a911ccda40ead) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '462e38a22dd9e06e24993e10bb952e5e') in 0.014633 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/AssetPackages/SyntyStudios/PolygonKnights/Models/SM_Bld_Castle_Wall_01_Lite.fbx
+  artifactKey: Guid(e330742a442cc044683c72a0f6dde3a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPackages/SyntyStudios/PolygonKnights/Models/SM_Bld_Castle_Wall_01_Lite.fbx using Guid(e330742a442cc044683c72a0f6dde3a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7faf49495e1a7bf4c3789eb23210f9c') in 0.011605 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/AssetPackages/SyntyStudios/PolygonKnights/Models/SM_Bld_Castle_Tower_01_Snow.fbx
+  artifactKey: Guid(becc74014a4fd5146895d57dc7a588d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPackages/SyntyStudios/PolygonKnights/Models/SM_Bld_Castle_Tower_01_Snow.fbx using Guid(becc74014a4fd5146895d57dc7a588d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a9c5c4523aec0574b5c2b85c365d8ba') in 0.012426 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/AssetPackages/SyntyStudios/PolygonKnights/Models/SM_Bld_Castle_Flag_01.fbx
+  artifactKey: Guid(df1b55231d0f07744a3d1a9ec9652e1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPackages/SyntyStudios/PolygonKnights/Models/SM_Bld_Castle_Flag_01.fbx using Guid(df1b55231d0f07744a3d1a9ec9652e1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f589d4a33d56f4e4e24ed7d4b8026e8') in 0.011419 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/AssetPackages/SyntyStudios/PolygonKnights/Models/SM_Bld_Castle_Tower_Top_01_Snow.fbx
+  artifactKey: Guid(4d265383abd45a34b91a3e4b6f39a16d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPackages/SyntyStudios/PolygonKnights/Models/SM_Bld_Castle_Tower_Top_01_Snow.fbx using Guid(4d265383abd45a34b91a3e4b6f39a16d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e1e0c728d41d73611bcea7995e4b410') in 0.011008 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/AssetPackages/SyntyStudios/PolygonKnights/Models/SM_Bld_Castle_Wall_Gate_01_Lite.fbx
+  artifactKey: Guid(121277cb72e3d954eafca81f401146a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPackages/SyntyStudios/PolygonKnights/Models/SM_Bld_Castle_Wall_Gate_01_Lite.fbx using Guid(121277cb72e3d954eafca81f401146a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be17660dd9e49410369f95b6938c5834') in 0.010033 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000011 seconds.
+  path: Assets/AssetPackages/SyntyStudios/PolygonKnights/Models/SM_Bld_Castle_Tower_Base_02.fbx
+  artifactKey: Guid(9900c1bb3daf8034ca7120b29854f3b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPackages/SyntyStudios/PolygonKnights/Models/SM_Bld_Castle_Tower_Base_02.fbx using Guid(9900c1bb3daf8034ca7120b29854f3b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f95c3ccf6c26287a96228d6911869f5') in 0.008932 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/AssetPackages/SyntyStudios/PolygonKnights/Models/SM_Bld_Church_Door_01.fbx
+  artifactKey: Guid(f7a88bcea2579d24f939db925537fcea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPackages/SyntyStudios/PolygonKnights/Models/SM_Bld_Church_Door_01.fbx using Guid(f7a88bcea2579d24f939db925537fcea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1e8ad925f2f1bb51710a8873200d04f') in 0.010722 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/AssetPackages/SyntyStudios/PolygonKnights/Models/SM_Bld_Church_Extension_01_Snow.fbx
+  artifactKey: Guid(940608d5ae5fc3241b6ce4aab6816c64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPackages/SyntyStudios/PolygonKnights/Models/SM_Bld_Church_Extension_01_Snow.fbx using Guid(940608d5ae5fc3241b6ce4aab6816c64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce7b7455b43f147f65c74cc458ff78a6') in 0.012552 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/AssetPackages/SyntyStudios/PolygonKnights/Models/SM_Bld_Castle_Tower_01_Lite.fbx
+  artifactKey: Guid(582b5e605473a204a83a9c0187ce9931) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPackages/SyntyStudios/PolygonKnights/Models/SM_Bld_Castle_Tower_01_Lite.fbx using Guid(582b5e605473a204a83a9c0187ce9931) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c50b5f09a15b0927191fde123354640d') in 0.010734 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/AssetPackages/SyntyStudios/PolygonKnights/Models/SM_Bld_Church_TowerBase_01_Lite.fbx
+  artifactKey: Guid(df2b8814475a8054fa4593373eeb028f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPackages/SyntyStudios/PolygonKnights/Models/SM_Bld_Church_TowerBase_01_Lite.fbx using Guid(df2b8814475a8054fa4593373eeb028f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29e2b193b1b33fbfe39df93d05f28e2b') in 0.010190 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/AssetPackages/SyntyStudios/PolygonKnights/Models/SM_Bld_Church_Extension_01_Lite.fbx
+  artifactKey: Guid(4a3c95a31013c7547a67f23d235ad2cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPackages/SyntyStudios/PolygonKnights/Models/SM_Bld_Church_Extension_01_Lite.fbx using Guid(4a3c95a31013c7547a67f23d235ad2cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99435db52337dbfcf8304344b33f0693') in 0.011834 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/AssetPackages/SyntyStudios/PolygonKnights/Models/SM_Bld_Church_Room_01_Lite.fbx
+  artifactKey: Guid(5343d8a371018db408b667141165e8c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPackages/SyntyStudios/PolygonKnights/Models/SM_Bld_Church_Room_01_Lite.fbx using Guid(5343d8a371018db408b667141165e8c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51520c09e3f8fe0578cfbbdf0f9838ce') in 0.012038 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/AssetPackages/SyntyStudios/PolygonKnights/Models/SM_Bld_House_Chimney_05.fbx
+  artifactKey: Guid(1280934ed1825c944a41d6a77bb54880) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPackages/SyntyStudios/PolygonKnights/Models/SM_Bld_House_Chimney_05.fbx using Guid(1280934ed1825c944a41d6a77bb54880) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7a66ef559e997bd1c4f15f6767c06f5') in 0.010353 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/AssetPackages/SyntyStudios/PolygonKnights/Models/SM_Bld_Castle_Flagpole_01.fbx
+  artifactKey: Guid(ab93b9e9098824b4490cfebb1783128e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPackages/SyntyStudios/PolygonKnights/Models/SM_Bld_Castle_Flagpole_01.fbx using Guid(ab93b9e9098824b4490cfebb1783128e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '881685ea93673258f2198bd94ef34990') in 0.010777 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/AssetPackages/SyntyStudios/PolygonKnights/Models/SM_Bld_Castle_Wood_Detal_01.fbx
+  artifactKey: Guid(86bf74c81d504bb469422ce2cc07b7b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPackages/SyntyStudios/PolygonKnights/Models/SM_Bld_Castle_Wood_Detal_01.fbx using Guid(86bf74c81d504bb469422ce2cc07b7b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '177a148b3f6c63540a7dfda6d2c10b29') in 0.010232 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/AssetPackages/SyntyStudios/PolygonKnights/Models/SM_Bld_Castle_Tower_Round_02_Lite.fbx
+  artifactKey: Guid(2ea4e879c341e4b40999bf5f4a621bab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPackages/SyntyStudios/PolygonKnights/Models/SM_Bld_Castle_Tower_Round_02_Lite.fbx using Guid(2ea4e879c341e4b40999bf5f4a621bab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99680de8d152be6348a4557a7925aca9') in 0.010394 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/AssetPackages/SyntyStudios/PolygonKnights/Models/SM_Bld_Church_Room_03.fbx
+  artifactKey: Guid(4000ca4b29070924a9d45a574a43dd68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPackages/SyntyStudios/PolygonKnights/Models/SM_Bld_Church_Room_03.fbx using Guid(4000ca4b29070924a9d45a574a43dd68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91a3c301d994f0ce2949b2828e315940') in 0.012832 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/AssetPackages/SyntyStudios/PolygonKnights/Models/SM_Bld_Castle_Tower_Mini_01.fbx
+  artifactKey: Guid(4e00bdee86e84a142864885ba4909f88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPackages/SyntyStudios/PolygonKnights/Models/SM_Bld_Castle_Tower_Mini_01.fbx using Guid(4e00bdee86e84a142864885ba4909f88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa004d86d7e26cc5bdd1331eb2e209f5') in 0.010424 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.001653 seconds.
+  path: Assets/AssetPackages/SyntyStudios/PolygonKnights/Models/SM_Bld_Castle_Tower_Round_Top_01.fbx
+  artifactKey: Guid(bcc82dd7fe0e7fc47821146530414b6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPackages/SyntyStudios/PolygonKnights/Models/SM_Bld_Castle_Tower_Round_Top_01.fbx using Guid(bcc82dd7fe0e7fc47821146530414b6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c7c571502c0a6df969bc74fa156557f') in 0.011076 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/AssetPackages/SyntyStudios/PolygonKnights/Models/SM_Bld_Church_Window_01.fbx
+  artifactKey: Guid(714aa364e72468641a571d46daf6ea9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPackages/SyntyStudios/PolygonKnights/Models/SM_Bld_Church_Window_01.fbx using Guid(714aa364e72468641a571d46daf6ea9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbf0bc046e4be227ed5c74f6db49e8b3') in 0.010346 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/AssetPackages/SyntyStudios/PolygonKnights/Models/SM_Bld_House_Door_03.fbx
+  artifactKey: Guid(d101f77492ff76e449936889b8205c73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPackages/SyntyStudios/PolygonKnights/Models/SM_Bld_House_Door_03.fbx using Guid(d101f77492ff76e449936889b8205c73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37528bb77ed284835a7ce9f314cba0f8') in 0.011888 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/AssetPackages/SyntyStudios/PolygonKnights/Models/SM_Bld_Church_Tower_03_Lite.fbx
+  artifactKey: Guid(dd6dc855462f1f7428f69649a48c02c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPackages/SyntyStudios/PolygonKnights/Models/SM_Bld_Church_Tower_03_Lite.fbx using Guid(dd6dc855462f1f7428f69649a48c02c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d1d37815734b865dfeb0b9a515db719') in 0.011608 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/AssetPackages/SyntyStudios/PolygonKnights/Models/SM_Bld_Castle_Iron_Gate_01.fbx
+  artifactKey: Guid(96e7bed35648db84d90692e794c9dcb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPackages/SyntyStudios/PolygonKnights/Models/SM_Bld_Castle_Iron_Gate_01.fbx using Guid(96e7bed35648db84d90692e794c9dcb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60f44d76f457f4453e247394332fb316') in 0.010273 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000098 seconds.
+  path: Assets/AssetPackages/SyntyStudios/PolygonKnights/Models/SM_Bld_Castle_Tower_Round_01_Lite.fbx
+  artifactKey: Guid(30daf2c9b79aa444f8f5c563c1003bfe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPackages/SyntyStudios/PolygonKnights/Models/SM_Bld_Castle_Tower_Round_01_Lite.fbx using Guid(30daf2c9b79aa444f8f5c563c1003bfe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '935b698386931c43f326ab1001f9c362') in 0.011328 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000087 seconds.
+  path: Assets/AssetPackages/SyntyStudios/PolygonKnights/Models/SM_Bld_House_Chimney_03.fbx
+  artifactKey: Guid(5e78c0abbb6561740891cb3f5bca856b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPackages/SyntyStudios/PolygonKnights/Models/SM_Bld_House_Chimney_03.fbx using Guid(5e78c0abbb6561740891cb3f5bca856b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0053a19843a8e873c3dcaf47bfb04c25') in 0.009593 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000066 seconds.
+  path: Assets/AssetPackages/SyntyStudios/PolygonKnights/Models/SM_Bld_Church_Room_01_Snow.fbx
+  artifactKey: Guid(0719ba4ee71558b47bde7e8be7d384e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPackages/SyntyStudios/PolygonKnights/Models/SM_Bld_Church_Room_01_Snow.fbx using Guid(0719ba4ee71558b47bde7e8be7d384e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12232f3a7b2436556ec3903f31dfce9c') in 0.010661 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/AssetPackages/SyntyStudios/PolygonKnights/Models/SM_Bld_Castle_Tower_02_Lite.fbx
+  artifactKey: Guid(8bd6c50aa1e4e0447991a74acbd18c8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPackages/SyntyStudios/PolygonKnights/Models/SM_Bld_Castle_Tower_02_Lite.fbx using Guid(8bd6c50aa1e4e0447991a74acbd18c8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '337c3e3e95657fc0099110f9716adf0e') in 0.009474 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/AssetPackages/SyntyStudios/PolygonKnights/Models/SM_Bld_Church_Room_02.fbx
+  artifactKey: Guid(149083546418a014f805a58e91713c31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPackages/SyntyStudios/PolygonKnights/Models/SM_Bld_Church_Room_02.fbx using Guid(149083546418a014f805a58e91713c31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b879083f724b3ee53f156b463fd54a30') in 0.010823 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000063 seconds.
+  path: Assets/AssetPackages/SyntyStudios/PolygonKnights/Models/SM_Bld_House_Chimney_05_Snow.fbx
+  artifactKey: Guid(670c353ba7a14d348bcbed6fc7a8b896) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPackages/SyntyStudios/PolygonKnights/Models/SM_Bld_House_Chimney_05_Snow.fbx using Guid(670c353ba7a14d348bcbed6fc7a8b896) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ebaddc1a2f4b35b9f4695c7ae26beaef') in 0.010342 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/AssetPackages/SyntyStudios/PolygonKnights/Models/SM_Bld_Castle_Tower_Mini_02.fbx
+  artifactKey: Guid(8ccf24a9aab24844f88ede55ea50735a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPackages/SyntyStudios/PolygonKnights/Models/SM_Bld_Castle_Tower_Mini_02.fbx using Guid(8ccf24a9aab24844f88ede55ea50735a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4cc0b96e0e909c89d44e4a1a130b49b3') in 0.008763 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000065 seconds.
+  path: Assets/AssetPackages/SyntyStudios/PolygonKnights/Models/SM_Bld_Castle_Tower_Wall_Top_01_Snow.fbx
+  artifactKey: Guid(f981ed296eeda8c4891453e106272df1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPackages/SyntyStudios/PolygonKnights/Models/SM_Bld_Castle_Tower_Wall_Top_01_Snow.fbx using Guid(f981ed296eeda8c4891453e106272df1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc6abc78c421d8036e1361d209652413') in 0.009322 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/AssetPackages/SyntyStudios/PolygonKnights/Models/SM_Bld_Church_Tower_02.fbx
+  artifactKey: Guid(9fed204465033c146aeaab36dda8e9fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPackages/SyntyStudios/PolygonKnights/Models/SM_Bld_Church_Tower_02.fbx using Guid(9fed204465033c146aeaab36dda8e9fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b815cf915b8c89c2c60b71d024b5afd') in 0.009700 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/AssetPackages/SyntyStudios/PolygonKnights/Models/SM_Bld_House_Chimney_02_Snow.fbx
+  artifactKey: Guid(5b7225f9483685d4ebf620f4e35fa50d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPackages/SyntyStudios/PolygonKnights/Models/SM_Bld_House_Chimney_02_Snow.fbx using Guid(5b7225f9483685d4ebf620f4e35fa50d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fdc60bba91dd7a7c763d1cf4412c135d') in 0.008250 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/AssetPackages/SyntyStudios/PolygonKnights/Models/SM_Bld_Castle_Pillar_01.fbx
+  artifactKey: Guid(47268cdb983de1b4998a47ba731bf6bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPackages/SyntyStudios/PolygonKnights/Models/SM_Bld_Castle_Pillar_01.fbx using Guid(47268cdb983de1b4998a47ba731bf6bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87186f04367e911e2d405397d4ea8fff') in 0.008171 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/AssetPackages/SyntyStudios/PolygonKnights/Models/SM_Bld_House_Door_02.fbx
+  artifactKey: Guid(dc6337257de0f304db805b57bcd0f382) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPackages/SyntyStudios/PolygonKnights/Models/SM_Bld_House_Door_02.fbx using Guid(dc6337257de0f304db805b57bcd0f382) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd21081c310390515a004beac79b4ae5') in 0.008429 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000009 seconds.
+  path: Assets/AssetPackages/SyntyStudios/PolygonKnights/Models/SM_Bld_Castle_Wall_Gate_01_Snow.fbx
+  artifactKey: Guid(9d83f5800933bfc489906d234261d5e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPackages/SyntyStudios/PolygonKnights/Models/SM_Bld_Castle_Wall_Gate_01_Snow.fbx using Guid(9d83f5800933bfc489906d234261d5e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a259e7f9ed7a6590642dcb94cf6b15e0') in 0.008900 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000059 seconds.
+  path: Assets/AssetPackages/SyntyStudios/PolygonKnights/Models/SM_Bld_Castle_Tower_03_Lite.fbx
+  artifactKey: Guid(a5cde09a730093744a1a8182d5bba429) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPackages/SyntyStudios/PolygonKnights/Models/SM_Bld_Castle_Tower_03_Lite.fbx using Guid(a5cde09a730093744a1a8182d5bba429) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78857976b38c5507a0cdae14147955b5') in 0.009343 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000084 seconds.
+  path: Assets/AssetPackages/SyntyStudios/PolygonKnights/Models/SM_Bld_Castle_Wood_Detal_01_Snow.fbx
+  artifactKey: Guid(5a04a5fcdd740f145a2e1e9b8085831c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPackages/SyntyStudios/PolygonKnights/Models/SM_Bld_Castle_Wood_Detal_01_Snow.fbx using Guid(5a04a5fcdd740f145a2e1e9b8085831c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50e3abf905a4c2645a34fcea3eb0db41') in 0.011192 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: The I/O operation has been aborted because of either a thread exit or an application request.
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
