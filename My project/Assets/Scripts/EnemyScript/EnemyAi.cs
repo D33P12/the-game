@@ -31,10 +31,10 @@ public class EnemyAI : MonoBehaviour
     public float maxHealth = 100f;
     public float currentHealth;
 
-    
+
     private Animator anim;
 
-   
+
 
     void Start()
     {
@@ -42,9 +42,9 @@ public class EnemyAI : MonoBehaviour
         agent = GetComponent<NavMeshAgent>();
         currentPatrolPoint = 0;
         anim = GetComponent<Animator>();
-        currentHealth = maxHealth; 
+        currentHealth = maxHealth;
 
-        
+
 
         UpdateAnimationState();
     }
@@ -224,7 +224,12 @@ public class EnemyAI : MonoBehaviour
     public void TakeDamage(float damageAmount)
     {
         currentHealth -= damageAmount;
-        
+        if (currentHealth <= 0) 
+            die();
+    }
+    public void die()
+    {
+        Destroy(gameObject);
     }
 
 }

@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 
 public class PlayerController : MonoBehaviour
@@ -13,6 +14,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float extraSpeed = 25f;
     [SerializeField] private float yRotation = 0f;
 
+    public UnityEvent OnToggleLights;
+
     public GameObject lightToggle;
 
     private Animator animator;
@@ -20,6 +23,8 @@ public class PlayerController : MonoBehaviour
     private bool isNearSwitch = false;
 
     private Vector3 _movementDirection;
+
+    LightSwitch currentSwitch;
     private void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
@@ -68,15 +73,17 @@ public class PlayerController : MonoBehaviour
        
         if(isIneracting1 && isNearSwitch)
         {
-            lightToggle.SetActive(!lightToggle.activeSelf);
+            currentSwitch.SwitchLights();
         }
-       
+
     }
 
     public void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("LightSwitch"))
         {
+             currentSwitch =  other.GetComponent<LightSwitch>();
+
             isNearSwitch = true;
         }
     }

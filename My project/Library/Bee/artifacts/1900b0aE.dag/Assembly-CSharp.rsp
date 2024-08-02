@@ -377,6 +377,8 @@
 "Assets/Scripts/ItemsScripts/FlameScript.cs"
 "Assets/Scripts/ItemsScripts/HealthRegainScript.cs"
 "Assets/Scripts/ItemsScripts/KeysScript.cs"
+"Assets/Scripts/ItemsScripts/LightSwitch.cs"
+"Assets/Scripts/ItemsScripts/StreetLight1.cs"
 "Assets/Scripts/PlayerScripts/CameraScript.cs"
 "Assets/Scripts/PlayerScripts/InputManager.cs"
 "Assets/Scripts/PlayerScripts/Inputs.cs"

@@ -10,6 +10,8 @@ public class DeathUIScript : MonoBehaviour
     public Canvas EndGameCanvas;
     public GameObject pSpawn;
     public TextMeshProUGUI keysText;
+
+    private bool testbool = true; 
    
 
     public GameObject spawnPosition;
@@ -34,7 +36,7 @@ public class DeathUIScript : MonoBehaviour
     }
     public void GameOverHealth()
     {
-        if (playerHealth != null && playerHealth.phealth <= 0)
+        if (playerHealth != null && playerHealth.phealth <= 0 && testbool)
         {
             Cursor.visible = true;
             Cursor.lockState = CursorLockMode.None;
@@ -45,8 +47,7 @@ public class DeathUIScript : MonoBehaviour
             {
                 EndGameCanvas.enabled = true;
             }
-           
-
+           testbool = false;
         }
     }
     public void MainMenu()
@@ -71,15 +72,9 @@ public class DeathUIScript : MonoBehaviour
     }
     public void RestartGame()
     {
+       
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         Time.timeScale = 1;
-        SceneManager.LoadScene(1);
-        GameManager.ResetKeys();
-        UpdateKeysText();
-        if (pSpawn != null && spawnPosition != null)
-        {
-
-            Instantiate(pSpawn, spawnPosition.transform.position, spawnPosition.transform.rotation);
-        }
     }
     void UpdateKeysText()
     {
