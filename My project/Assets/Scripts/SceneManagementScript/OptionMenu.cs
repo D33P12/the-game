@@ -72,6 +72,7 @@ public class OptionMenu : MonoBehaviour
         Time.timeScale = 1;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         GameManager.Keys = 0;
+        GameManager.ResetKeys();
         UpdateKeysText();
     }
 
@@ -80,6 +81,7 @@ public class OptionMenu : MonoBehaviour
         Time.timeScale = 1;
         SceneManager.LoadScene(0);
         GameManager.Keys = 0;
+        GameManager.ResetKeys();
         UpdateKeysText();
     }
 

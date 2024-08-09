@@ -72,6 +72,7 @@ public class DeathUIScript : MonoBehaviour
     {
 
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        GameManager.ResetKeys();
         Time.timeScale = 1;
     }
     void UpdateKeysText()
