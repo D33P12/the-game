@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 public class DeathUIScript : MonoBehaviour
 {
     [SerializeField] PlayerHealthScript playerHealth;
-    public Canvas EndGameCanvas;
+    public GameObject EndGameCanvas;
     public GameObject pSpawn;
     public TextMeshProUGUI keysText;
 
@@ -22,7 +22,7 @@ public class DeathUIScript : MonoBehaviour
 
         if (EndGameCanvas != null)
         {
-            EndGameCanvas.enabled = false;
+            EndGameCanvas.SetActive(false);
         }
 
     }
@@ -34,8 +34,9 @@ public class DeathUIScript : MonoBehaviour
     }
     public void GameOverHealth()
     {
-        if (playerHealth != null && playerHealth.phealth <= 0 && testbool)
+        if (playerHealth != null && playerHealth.phealth <= 0)
         {
+            Debug.Log("............died");
             Cursor.visible = true;
             Cursor.lockState = CursorLockMode.None;
 
@@ -43,9 +44,9 @@ public class DeathUIScript : MonoBehaviour
 
             if (EndGameCanvas != null)
             {
-                EndGameCanvas.enabled = true;
+                EndGameCanvas.SetActive(true);
             }
-            testbool = false;
+         
         }
     }
     public void MainMenu()

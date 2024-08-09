@@ -1356,7 +1356,7 @@ ScriptsOnlyBuild:
     className: TextMeshProUGUI
   - hash:
       serializedVersion: 2
-      Hash: bf184b21ee8247129e37e679a0872c1d
+      Hash: e91c38e2cb49cf3491c6aeee3e9dd510
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: DeathUIScript
@@ -1650,7 +1650,7 @@ ScriptsOnlyBuild:
     className: SignalTrack
   - hash:
       serializedVersion: 2
-      Hash: affedc7968101241ad3abd367bb28c09
+      Hash: f3c48835b322840f0d48c2fafd0ccbe4
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: GameOVerScript
@@ -1856,4 +1856,4 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Scenes/MainMenu.unity
   - Assets/Scenes/Level1.unity
-  playerPath: C:/Users/Deepanshu/Desktop/THE GAME/My project.exe
+  playerPath: C:/Users/Deepanshu/Desktop/New folder (3)/My project.exe

@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 
 public class GameOVerScript : MonoBehaviour
 {
-    public Canvas EndGameCanvas;
+    public GameObject EndGameCanvas;
     public TextMeshProUGUI keysText;
 
     void Start()
@@ -12,7 +12,7 @@ public class GameOVerScript : MonoBehaviour
 
         if (EndGameCanvas != null)
         {
-            EndGameCanvas.enabled = false;
+            EndGameCanvas.SetActive(false);
         }
 
     }
@@ -30,7 +30,7 @@ public class GameOVerScript : MonoBehaviour
 
             if (EndGameCanvas != null)
             {
-                EndGameCanvas.enabled = true;
+                EndGameCanvas.SetActive(true);
             }
         }
     }
