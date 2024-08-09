@@ -5,8 +5,8 @@ public class AttackScript : MonoBehaviour
 {
     [SerializeField] private InputManager inputManager;
     [SerializeField] private AudioSource fireSound;
-    [SerializeField] private Transform fireSpawnPoint; 
-    [SerializeField] private GameObject firePrefab; 
+    [SerializeField] private Transform fireSpawnPoint;
+    [SerializeField] private GameObject firePrefab;
     [SerializeField] private float fireSpeed = 20f;
 
     [SerializeField] private int maxAmmo = 10;
@@ -17,7 +17,7 @@ public class AttackScript : MonoBehaviour
 
     private void Start()
     {
-        currentAmmo = maxAmmo; 
+        currentAmmo = maxAmmo;
         UpdateAmmoDisplay();
     }
     private void OnEnable()
@@ -56,7 +56,7 @@ public class AttackScript : MonoBehaviour
     public void AddAmmo(int amount)
     {
         currentAmmo = Mathf.Clamp(currentAmmo + amount, 0, maxAmmo);
-       
+
         UpdateAmmoDisplay();
 
     }
@@ -65,17 +65,17 @@ public class AttackScript : MonoBehaviour
         if (ammoText != null)
         {
             ammoText.text = $"Flames: {currentAmmo}/{maxAmmo}";
-  
+
         }
         if (currentAmmo == 0)
         {
             noammoText.text = "No Flames Left";
             noammoText.enabled = true;
         }
-        else if(currentAmmo > 0)
+        else if (currentAmmo > 0)
         {
             noammoText.enabled = false;
         }
     }
-   
+
 }

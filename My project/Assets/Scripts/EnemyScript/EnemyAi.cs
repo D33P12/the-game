@@ -224,7 +224,7 @@ public class EnemyAI : MonoBehaviour
     public void TakeDamage(float damageAmount)
     {
         currentHealth -= damageAmount;
-        if (currentHealth <= 0) 
+        if (currentHealth <= 0)
             die();
     }
     public void die()

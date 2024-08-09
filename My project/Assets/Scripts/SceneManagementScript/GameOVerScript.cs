@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -11,17 +9,17 @@ public class GameOVerScript : MonoBehaviour
 
     void Start()
     {
- 
+
         if (EndGameCanvas != null)
         {
             EndGameCanvas.enabled = false;
         }
-       
+
     }
 
     void OnCollisionEnter(Collision collision)
     {
-        
+
         if (collision.gameObject.CompareTag("Player"))
         {
             Cursor.visible = true;
@@ -29,7 +27,7 @@ public class GameOVerScript : MonoBehaviour
 
             Time.timeScale = 0;
 
-            
+
             if (EndGameCanvas != null)
             {
                 EndGameCanvas.enabled = true;
@@ -47,7 +45,7 @@ public class GameOVerScript : MonoBehaviour
     {
         Application.Quit();
 
-        UnityEditor.EditorApplication.isPlaying = false;
+      
 
     }
     public void RestartGame()

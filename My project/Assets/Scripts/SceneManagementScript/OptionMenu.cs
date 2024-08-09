@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 public class OptionMenu : MonoBehaviour
 {
     [SerializeField] private InputManager inputManager;
-   
+
     [SerializeField] private GameObject pauseMenu;
 
     private bool isPaused = false;
@@ -46,7 +46,7 @@ public class OptionMenu : MonoBehaviour
         pauseMenu.SetActive(true);
         Time.timeScale = 0;
         isPaused = true;
-        
+
     }
 
     public void ResumeGame()
@@ -56,20 +56,20 @@ public class OptionMenu : MonoBehaviour
         pauseMenu.SetActive(false);
         Time.timeScale = 1;
         isPaused = false;
-        
+
     }
 
     public void QuitGame()
     {
         Application.Quit();
 
-        UnityEditor.EditorApplication.isPlaying = false;
+       
 
     }
 
     public void RestartGame()
     {
-        Time.timeScale = 1; 
+        Time.timeScale = 1;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         GameManager.Keys = 0;
         UpdateKeysText();
@@ -93,7 +93,6 @@ public class OptionMenu : MonoBehaviour
     {
         Application.Quit();
 
-        UnityEditor.EditorApplication.isPlaying = false;
 
     }
     void UpdateKeysText()

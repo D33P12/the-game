@@ -12,11 +12,11 @@ public class KeysScript : MonoBehaviour
         if (other.gameObject.tag == "Player")
         {
 
-            GameManager.Keys += 1; 
+            GameManager.Keys += 1;
 
-            Destroy(gameObject); 
+            Destroy(gameObject);
 
-            Count.GetComponent<TextMeshProUGUI>().text = "Keys: " + GameManager.Keys; 
+            Count.GetComponent<TextMeshProUGUI>().text = "Keys: " + GameManager.Keys;
 
 
         }

@@ -8,14 +8,14 @@ public class FlameScript : MonoBehaviour
 
     void Awake()
     {
-        Destroy(gameObject, life); 
+        Destroy(gameObject, life);
     }
     public LayerMask enemyLayer;
 
     void OnTriggerEnter(Collider other)
     {
         EnemyAI enemyHealth = other.GetComponent<EnemyAI>();
-       
+
         if (enemyHealth != null)
         {
             enemyHealth.TakeDamage(damage);

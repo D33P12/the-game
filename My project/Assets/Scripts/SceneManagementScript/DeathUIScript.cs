@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -11,12 +9,12 @@ public class DeathUIScript : MonoBehaviour
     public GameObject pSpawn;
     public TextMeshProUGUI keysText;
 
-    private bool testbool = true; 
-   
+    private bool testbool = true;
+
 
     public GameObject spawnPosition;
 
-    
+
     public Quaternion spawnRotation = Quaternion.identity;
 
     void Start()
@@ -47,7 +45,7 @@ public class DeathUIScript : MonoBehaviour
             {
                 EndGameCanvas.enabled = true;
             }
-           testbool = false;
+            testbool = false;
         }
     }
     public void MainMenu()
@@ -58,7 +56,7 @@ public class DeathUIScript : MonoBehaviour
         UpdateKeysText();
         if (pSpawn != null && spawnPosition != null)
         {
-            
+
             Instantiate(pSpawn, spawnPosition.transform.position, spawnPosition.transform.rotation);
         }
 
@@ -67,12 +65,12 @@ public class DeathUIScript : MonoBehaviour
     {
         Application.Quit();
 
-        UnityEditor.EditorApplication.isPlaying = false;
+      
 
     }
     public void RestartGame()
     {
-       
+
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         Time.timeScale = 1;
     }

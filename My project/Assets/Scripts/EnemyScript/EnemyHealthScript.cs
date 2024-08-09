@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemyHealthScript : MonoBehaviour
@@ -23,7 +21,7 @@ public class EnemyHealthScript : MonoBehaviour
 
     private void Die()
     {
-        
+
         Destroy(gameObject);
     }
 }

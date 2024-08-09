@@ -16,8 +16,8 @@ public class Door1 : MonoBehaviour
 
     private void Start()
     {
-        doorSwitch.SetActive(true); 
-        doorSwitch1.SetActive(true); 
+        doorSwitch.SetActive(true);
+        doorSwitch1.SetActive(true);
         doorSwitch2.SetActive(true);
         doorSwitch3.SetActive(true);
         doorSwitch4.SetActive(true);
@@ -27,19 +27,19 @@ public class Door1 : MonoBehaviour
     private void OnTriggerStay(Collider other)
     {
 
-        if (other.CompareTag("Player") && GameManager.Keys>=3)
+        if (other.CompareTag("Player") && GameManager.Keys >= 3)
         {
-            doorSwitch.SetActive(false); 
-           
+            doorSwitch.SetActive(false);
+
         }
         if (other.CompareTag("Player") && GameManager.Keys >= 5)
         {
-            doorSwitch1.SetActive(false); 
+            doorSwitch1.SetActive(false);
 
         }
         if (other.CompareTag("Player") && GameManager.Keys >= 10)
         {
-            doorSwitch2.SetActive(false); 
+            doorSwitch2.SetActive(false);
 
         }
         if (other.CompareTag("Player") && GameManager.Keys >= 9)
@@ -60,8 +60,8 @@ public class Door1 : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            doorSwitch.SetActive(true); 
-            doorSwitch1.SetActive(true); 
+            doorSwitch.SetActive(true);
+            doorSwitch1.SetActive(true);
             doorSwitch2.SetActive(true);
             doorSwitch3.SetActive(true);
             doorSwitch4.SetActive(true);

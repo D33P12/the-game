@@ -5,7 +5,7 @@ using UnityEngine.Events;
 public class PlayerController : MonoBehaviour
 {
     [SerializeField] private InputManager inputManager;
-    
+
     [SerializeField] private Transform playerTransform;
     [SerializeField] private Rigidbody playerRigidbody;
     [SerializeField] private float walkSpeed = 7f;
@@ -28,8 +28,8 @@ public class PlayerController : MonoBehaviour
     private void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
-      
-       lightToggle.SetActive(false);
+
+        lightToggle.SetActive(false);
         animator = GetComponent<Animator>();
 
     }
@@ -70,8 +70,8 @@ public class PlayerController : MonoBehaviour
     }
     private void OnUse(bool isIneracting1)
     {
-       
-        if(isIneracting1 && isNearSwitch)
+
+        if (isIneracting1 && isNearSwitch)
         {
             currentSwitch.SwitchLights();
         }
@@ -82,7 +82,7 @@ public class PlayerController : MonoBehaviour
     {
         if (other.CompareTag("LightSwitch"))
         {
-             currentSwitch =  other.GetComponent<LightSwitch>();
+            currentSwitch = other.GetComponent<LightSwitch>();
 
             isNearSwitch = true;
         }
@@ -93,22 +93,22 @@ public class PlayerController : MonoBehaviour
         if (other.CompareTag("LightSwitch"))
         {
             isNearSwitch = false;
-            
+
         }
     }
 
     private void HandleMovement()
     {
 
-          Vector3 velocity = _movementDirection * walkSpeed;
-          playerRigidbody.velocity = new Vector3(velocity.x, playerRigidbody.velocity.y, velocity.z);
-    
+        Vector3 velocity = _movementDirection * walkSpeed;
+        playerRigidbody.velocity = new Vector3(velocity.x, playerRigidbody.velocity.y, velocity.z);
+
     }
 
     private void HandleRotation()
     {
 
-         playerTransform.localRotation = Quaternion.Euler(0, yRotation, 0);
+        playerTransform.localRotation = Quaternion.Euler(0, yRotation, 0);
 
     }
     private void UpdateAnimation()
@@ -116,13 +116,13 @@ public class PlayerController : MonoBehaviour
 
         Vector3 localVelocity = playerTransform.InverseTransformDirection(playerRigidbody.velocity);
 
-        float forwardSpeed = localVelocity.x; 
-        float sideSpeed = localVelocity.z; 
+        float forwardSpeed = localVelocity.x;
+        float sideSpeed = localVelocity.z;
 
-       
-        sideSpeed = Mathf.Clamp(sideSpeed, -1f, 1f); 
 
-       
+        sideSpeed = Mathf.Clamp(sideSpeed, -1f, 1f);
+
+
         animator.SetFloat("forwardSpeed", forwardSpeed);
         animator.SetFloat("sideSpeed", sideSpeed);
 
