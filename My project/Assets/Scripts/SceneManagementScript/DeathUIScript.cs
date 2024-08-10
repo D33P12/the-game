@@ -19,7 +19,7 @@ public class DeathUIScript : MonoBehaviour
 
     void Start()
     {
-
+        testbool = true;
         if (EndGameCanvas != null)
         {
             EndGameCanvas.SetActive(false);
@@ -34,13 +34,14 @@ public class DeathUIScript : MonoBehaviour
     }
     public void GameOverHealth()
     {
-        if (playerHealth != null && playerHealth.phealth <= 0)
+        if (playerHealth != null && playerHealth.phealth <= 0 && testbool )
         {
             Debug.Log("............died");
             Cursor.visible = true;
             Cursor.lockState = CursorLockMode.None;
 
             Time.timeScale = 0;
+            Debug.Log("BOO");
 
             if (EndGameCanvas != null)
             {
@@ -71,10 +72,11 @@ public class DeathUIScript : MonoBehaviour
     }
     public void RestartGame()
     {
-
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        testbool = false;
         GameManager.ResetKeys();
         Time.timeScale = 1;
+        Debug.Log(Time.timeScale);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
     void UpdateKeysText()
     {
